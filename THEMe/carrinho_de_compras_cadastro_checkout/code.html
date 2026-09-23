@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-primary-fixed": "#201c00", "surface-container": "#f0eded", "outline-variant": "#cdc7aa", "error": "#ba1a1a", "surface": "#fbf9f8", "secondary-fixed-dim": "#adc6ff", "surface-bright": "#fbf9f8", "surface-container-highest": "#e4e2e1", "on-primary-fixed-variant": "#504700", "on-error-container": "#93000a", "outline": "#7c775f", "surface-dim": "#dcd9d9", "surface-tint": "#6a5f00", "error-container": "#ffdad6", "on-secondary-fixed-variant": "#004493", "on-secondary-fixed": "#001a41", "primary-container": "#ffe600", "secondary-fixed": "#d8e2ff", "inverse-primary": "#dec800", "inverse-surface": "#303030", "surface-container-high": "#eae8e7", "on-primary": "#ffffff", "on-tertiary-container": "#007637", "on-tertiary-fixed-variant": "#005224", "on-tertiary-fixed": "#00210b", "tertiary-fixed": "#78fc9b", "inverse-on-surface": "#f3f0f0", "on-surface-variant": "#4b4731", "on-tertiary": "#ffffff", "on-surface": "#1b1c1c", "surface-container-lowest": "#ffffff", "primary-fixed": "#fde400", "background": "#fbf9f8", "primary-fixed-dim": "#dec800", "surface-variant": "#e4e2e1", "on-error": "#ffffff", "tertiary": "#006d32", "secondary-container": "#1171e7", "on-background": "#1b1c1c", "tertiary-container": "#7bff9d", "tertiary-fixed-dim": "#5adf81", "surface-container-low": "#f6f3f2", "on-secondary-container": "#fefcff", "on-primary-container": "#726600", "on-secondary": "#ffffff", "secondary": "#0058bb", "primary": "#6a5f00" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "gutter": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "space-2xl": "3rem", "space-2xs": "0.125rem", "gutter-desktop": "1.5rem", "margin": "1rem", "space-xs": "0.25rem", "margin-desktop": "2rem", "space-lg": "1.5rem", "space-xl": "2rem" }, fontFamily: { "display-lg": ["Inter"], "display-lg-mobile": ["Inter"], "headline-lg": ["Inter"], "label-sm": ["Inter"], "body-md": ["Inter"], "price-card": ["Inter"], "price-hero": ["Inter"], "headline-lg-mobile": ["Inter"], "badge": ["Inter"], "headline-md": ["Inter"], "body-lg": ["Inter"], "price-fraction": ["Inter"], "headline-sm": ["Inter"], "body-sm": ["Inter"], "label-md": ["Inter"] }, fontSize: { "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "display-lg-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "price-card": ["24px", { "lineHeight": "28px", "fontWeight": "400" }], "price-hero": ["36px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "300" }], "headline-lg-mobile": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "badge": ["11px", { "lineHeight": "12px", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-md": ["20px", { "lineHeight": "26px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "price-fraction": ["14px", { "lineHeight": "14px", "fontWeight": "400" }], "headline-sm": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-md": ["14px", { "lineHeight": "18px", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface"><header class="fixed top-0 left-0 right-0 z-50 bg-primary-container shadow-[0_1px_8px_rgba(0,0,0,0.08)]"><div class="h-28 max-w-[1200px] mx-auto px-margin flex flex-col justify-between py-space-xs"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><img alt="CompFast Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3PeHRvQJh4d0V8OGW7X-GPtTnXn9DgowZ__M0zcBXtbsMc5Ei-kZMGK_J-XOcj3G5M9VN_hhfENFE0QJGwxNEQVk-6x4zHkytBF0O0zOM0Em9U_Ukf0CXSykEhXOGlGkQKtVEd4vlGBoO_ZXquus_fegnh4jZuQNy1jM8LCKECSvsy0YTOC66nhdXE88oy7CukYHEGEEmVYpw_GwItGRBahxSE84GEEb1_2_WguvrJNwXwmzLscnI"/><span class="font-headline-sm text-headline-sm text-on-primary-fixed">CompFast</span></div><div class="flex-1 max-w-2xl relative flex items-center"><div class="flex w-full items-center bg-surface-container-lowest rounded shadow-[0_1px_2px_rgba(0,0,0,0.1)] overflow-hidden"><input class="w-full px-space-md py-space-xs font-body-md text-body-md text-on-surface focus:outline-none placeholder:text-outline" placeholder="Buscar produtos, marcas e muito mais..." type="text"/><div class="h-6 w-px bg-outline-variant"></div><button class="px-space-md py-space-xs bg-surface-container-lowest hover:bg-surface-container text-on-surface-variant flex items-center justify-center"><span class="material-symbols-outlined text-[20px]">search</span></button></div></div><div class="flex items-center gap-space-md ml-auto"><div class="flex items-center gap-space-xs bg-surface-container-lowest/80 px-space-sm py-space-2xs rounded"><a class="font-label-sm text-label-sm px-space-xs py-space-2xs rounded bg-secondary text-on-secondary" data-path="vitrine" href="#">Vitrine</a><a class="font-label-sm text-label-sm px-space-xs py-space-2xs rounded text-on-surface-variant hover:text-on-surface" data-path="painel-admin" href="#">Painel Admin</a></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="flex items-center justify-between pb-space-2xs font-body-sm text-body-sm"><div class="flex items-center gap-space-xs text-on-primary-fixed cursor-pointer hover:opacity-80"><span class="material-symbols-outlined text-[18px]">location_on</span><div class="flex flex-col leading-none"><span class="text-[10px] text-on-primary-fixed-variant">Enviar para</span><span class="font-label-sm text-label-sm font-semibold">São Paulo, SP 01001-000</span></div></div><nav class="flex items-center gap-space-lg" data-active-classes="font-semibold text-on-primary-fixed"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="categorias" href="#">Categorias</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="ofertas-do-dia" href="#">Ofertas do Dia</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="cupons-de-desconto" href="#">Cupons</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="historico" href="#">Histórico</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="vender" href="#">Vender</a></nav><div class="flex items-center gap-space-md text-on-primary-fixed"><a class="text-on-surface-variant hover:text-on-surface" data-path="crie-a-sua-conta" href="#">Crie a sua conta</a><a class="text-on-surface-variant hover:text-on-surface" data-path="entre" href="#">Entre</a><a class="text-on-surface-variant hover:text-on-surface" data-path="minhas-compras" href="#">Minhas Compras</a><a class="relative flex items-center text-on-surface-variant hover:text-on-surface" data-path="carrinho" href="#"><span class="material-symbols-outlined text-[22px]">shopping_cart</span><span class="absolute -top-2 -right-2 bg-secondary text-on-secondary text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center">3</span></a></div></div></div></header><main class="w-full pt-28 bg-surface"><div class="flex flex-col w-full">
+<div class="max-w-[1200px] w-full mx-auto px-margin py-space-xl">
+<!-- Breadcrumb & Status Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-lg">
+<div class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<a class="hover:text-secondary flex items-center gap-space-2xs" href="#">
+<span class="material-symbols-outlined text-[16px]">storefront</span>
+          Vitrine
+        </a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="font-label-sm text-label-sm text-on-surface">Carrinho & Checkout Seguro</span>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-space-xs rounded-full shadow-sm">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary"></span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-tertiary text-[16px]">bolt</span>
+          Supabase Realtime Sync Conectado
+        </span>
+</div>
+</div>
+<!-- Main 2-Column Checkout Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
+<!-- LEFT COLUMN: Cart Items, Coupons & Fast Registration (7 cols on lg, 8 on xl) -->
+<div class="lg:col-span-7 xl:col-span-8 flex flex-col gap-space-lg">
+<!-- Cart Items Box -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between pb-space-md mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[24px]">shopping_bag</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Itens Selecionados (<span id="cart-count-badge">2</span>)</h2>
+</div>
+<button class="flex items-center gap-space-2xs text-secondary hover:text-on-secondary-fixed-variant font-label-sm text-label-sm transition-colors" id="btn-sync-storage" title="Salva carrinho local e sincroniza com a nuvem">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+              Salvo no Navegador & Nuvem
+            </button>
+</div>
+<!-- Product Item 1 -->
+<div class="cart-item bg-surface-container-low rounded-lg p-space-md mb-space-sm flex flex-col sm:flex-row items-center gap-space-md transition-all hover:shadow-md" data-discount="30.00" data-id="101" data-price="249.90">
+<div class="w-24 h-24 rounded-lg bg-surface-container overflow-hidden flex-shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="High quality wireless mechanical ergonomic keyboard with RGB key illumination placed on a clean desk workspace with soft studio spotlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwX-2li1IXrEYck9nWm4ZbDqeKZ9U459H04ZhDzVN8FW3cVl2h7XTP4gXRiOL4dg9s4GHzNgkwomp8Y5d0u1L3v2rkTJU5iVjstYNHv8IHKJ690sBgCcU4CM0tmFbJXPTXrr2ccr4yJ-encoYJ_Y5onM2c_soUGejp0ba_6UQ0XuHxyRhuQSuvvvYdB5klpSq6JtxEDad81cK0lpmbXSgkQnXNZALiyGH7lGEfIuz0GFCOxN4kf_9v"/>
+<span class="absolute bottom-1 left-1 bg-primary-container text-on-primary-fixed font-badge text-badge px-space-2xs rounded">FULL</span>
+</div>
+<div class="flex-1 min-w-0 flex flex-col gap-space-2xs w-full">
+<div class="flex items-start justify-between gap-space-xs">
+<span class="font-badge text-badge uppercase text-secondary font-bold tracking-wider">Periféricos & Teclados</span>
+<button class="remove-item-btn text-outline hover:text-error transition-colors p-space-2xs" title="Remover item">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+<h3 class="font-label-md text-label-md text-on-surface line-clamp-1 font-semibold">Teclado Mecânico Gamer Pro Wireless Low Profile</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-tertiary text-[14px]">local_shipping</span>
+                Entrega Turbo CompFast Express
+              </p>
+<div class="flex flex-wrap items-center justify-between gap-space-sm mt-space-2xs">
+<div class="flex items-center bg-surface-container-lowest rounded shadow-sm px-space-xs py-space-2xs">
+<button class="qty-btn-minus w-7 h-7 flex items-center justify-center text-on-surface hover:bg-surface-container rounded transition-colors">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="qty-val font-label-md text-label-md w-8 text-center font-bold">1</span>
+<button class="qty-btn-plus w-7 h-7 flex items-center justify-center text-on-surface hover:bg-surface-container rounded transition-colors">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+<div class="text-right">
+<div class="flex items-baseline gap-space-xs">
+<span class="text-outline line-through text-[12px]">R$ 279,90</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold item-total-display">R$ 249,90</span>
+</div>
+<span class="font-badge text-badge text-tertiary block font-bold">-R$ 30,00 de desconto unitário</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Product Item 2 -->
+<div class="cart-item bg-surface-container-low rounded-lg p-space-md flex flex-col sm:flex-row items-center gap-space-md transition-all hover:shadow-md" data-discount="15.00" data-id="102" data-price="129.00">
+<div class="w-24 h-24 rounded-lg bg-surface-container overflow-hidden flex-shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="High precision wireless ergonomic gaming mouse on a dark textured desk pad with subtle LED glow reflection" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKDdPcbTNnQKby0GYB78rGUhfjkUELQgtf2pi-RJjmdvkaMKHk9OrVoewM-41sgLYYPP26m4xqffhuqR0QzBeQT5gDW2otnyklII5SXWBkycm4MbtFgK5JFu7DiF4LXyg0UURlkX6FCDRV1S8wE7SYKvWsXoPotA_Na_PeP_RrMkQcjUiYG7QZxqH9lzynlguRc8VlEW_lsQcWxHzyTTL0J2Bv2QiKOcCJKphXVVS9TaF_d5R6hUQq"/>
+<span class="absolute bottom-1 left-1 bg-tertiary-container text-on-tertiary-container font-badge text-badge px-space-2xs rounded">OFERTA</span>
+</div>
+<div class="flex-1 min-w-0 flex flex-col gap-space-2xs w-full">
+<div class="flex items-start justify-between gap-space-xs">
+<span class="font-badge text-badge uppercase text-secondary font-bold tracking-wider">Acessórios Tech</span>
+<button class="remove-item-btn text-outline hover:text-error transition-colors p-space-2xs" title="Remover item">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+<h3 class="font-label-md text-label-md text-on-surface line-clamp-1 font-semibold">Mouse Óptico Sem Fio 16.000 DPI Ultra Leve</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-tertiary text-[14px]">local_shipping</span>
+                Frete Grátis CompFast
+              </p>
+<div class="flex flex-wrap items-center justify-between gap-space-sm mt-space-2xs">
+<div class="flex items-center bg-surface-container-lowest rounded shadow-sm px-space-xs py-space-2xs">
+<button class="qty-btn-minus w-7 h-7 flex items-center justify-center text-on-surface hover:bg-surface-container rounded transition-colors">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="qty-val font-label-md text-label-md w-8 text-center font-bold">1</span>
+<button class="qty-btn-plus w-7 h-7 flex items-center justify-center text-on-surface hover:bg-surface-container rounded transition-colors">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+<div class="text-right">
+<div class="flex items-baseline gap-space-xs">
+<span class="text-outline line-through text-[12px]">R$ 144,00</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold item-total-display">R$ 129,00</span>
+</div>
+<span class="font-badge text-badge text-tertiary block font-bold">-R$ 15,00 de desconto unitário</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Coupon Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">sell</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Possui cupom de desconto?</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Insira o código promocional cadastrado no sistema (Experimente o cupom <span class="bg-primary-container text-on-primary-fixed font-bold px-space-2xs rounded">FAST20</span> para 20% OFF).
+          </p>
+<div class="flex items-center gap-space-sm mt-space-2xs">
+<div class="relative flex-1">
+<input class="w-full px-space-md py-space-sm rounded bg-surface-container-low text-on-surface font-label-md text-label-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary focus:outline-none uppercase tracking-wider" id="coupon-input" placeholder="Ex: FAST20 ou COMPRA10" type="text" uppercase=""/>
+</div>
+<button class="px-space-lg py-space-sm bg-secondary text-on-secondary font-label-md text-label-md rounded shadow-sm hover:bg-on-secondary-fixed-variant transition-colors flex items-center gap-space-2xs" id="btn-apply-coupon">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+              Aplicar
+            </button>
+</div>
+<div class="hidden p-space-xs rounded font-body-sm text-body-sm flex items-center gap-space-xs" id="coupon-feedback"></div>
+</div>
+<!-- First Purchase Registration Box (Supabase Auth & public.clientes) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm relative overflow-hidden">
+<div class="absolute -right-12 -top-12 w-48 h-48 bg-primary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex items-start gap-space-sm mb-space-md">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">person_add</span>
+</div>
+<div>
+<span class="bg-tertiary-container text-on-tertiary-container font-badge text-badge px-space-xs py-space-2xs rounded uppercase tracking-wider font-bold">Checkout Expresso</span>
+<h2 class="font-headline-md text-headline-md text-on-surface mt-space-2xs">Primeira compra? Cadastro Rápido Supabase</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Seu cadastro cria simultaneamente a credencial segura em <code class="bg-surface-container px-space-2xs rounded text-secondary font-semibold">auth.users</code> e o perfil em <code class="bg-surface-container px-space-2xs rounded text-secondary font-semibold">public.clientes</code>.
+              </p>
+</div>
+</div>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-space-md" id="checkout-register-form" onsubmit="return false;">
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold" for="reg-nome">Nome Completo *</label>
+<div class="flex items-center bg-surface-container-low rounded px-space-sm py-space-xs">
+<span class="material-symbols-outlined text-outline text-[18px] mr-space-xs">badge</span>
+<input class="bg-transparent w-full text-on-surface font-body-md text-body-md focus:outline-none" id="reg-nome" placeholder="Carlos Eduardo Silva" required="" type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold" for="reg-email">E-mail Principal *</label>
+<div class="flex items-center bg-surface-container-low rounded px-space-sm py-space-xs">
+<span class="material-symbols-outlined text-outline text-[18px] mr-space-xs">mail</span>
+<input class="bg-transparent w-full text-on-surface font-body-md text-body-md focus:outline-none" id="reg-email" placeholder="carlos@exemplo.com.br" required="" type="email"/>
+</div>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold" for="reg-telefone">Telefone / WhatsApp *</label>
+<div class="flex items-center bg-surface-container-low rounded px-space-sm py-space-xs">
+<span class="material-symbols-outlined text-outline text-[18px] mr-space-xs">phone_iphone</span>
+<input class="bg-transparent w-full text-on-surface font-body-md text-body-md focus:outline-none" id="reg-telefone" placeholder="(11) 98765-4321" required="" type="tel"/>
+</div>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold" for="reg-senha">Criar Senha de Acesso *</label>
+<div class="flex items-center bg-surface-container-low rounded px-space-sm py-space-xs">
+<span class="material-symbols-outlined text-outline text-[18px] mr-space-xs">lock</span>
+<input class="bg-transparent w-full text-on-surface font-body-md text-body-md focus:outline-none" id="reg-senha" minlength="6" placeholder="Mínimo 6 caracteres" required="" type="password"/>
+</div>
+</div>
+<div class="md:col-span-2 flex items-center gap-space-xs bg-surface-container-low/70 p-space-sm rounded">
+<span class="material-symbols-outlined text-tertiary text-[20px]">verified</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Seus dados serão vinculados ao pedido via políticas de segurança RLS (Row Level Security).
+              </p>
+</div>
+</form>
+</div>
+</div>
+<!-- RIGHT COLUMN: Purchase Summary, Dynamic Payment & Order Placement (5 cols on lg, 4 on xl) -->
+<div class="lg:col-span-5 xl:col-span-4 flex flex-col gap-space-lg">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-md sticky top-32">
+<h2 class="font-headline-md text-headline-md text-on-surface pb-space-sm border-b border-surface-container flex items-center justify-between">
+<span>Resumo da Compra</span>
+<span class="material-symbols-outlined text-tertiary text-[22px]">format_image_left</span>
+</h2>
+<!-- Price Calculations Details -->
+<div class="py-space-md flex flex-col gap-space-sm font-body-md text-body-md">
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>Subtotal dos produtos</span>
+<span class="font-semibold text-on-surface" id="summary-subtotal">R$ 378,90</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant">
+<span class="flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-tertiary text-[16px]">local_shipping</span>
+                Frete Expresso CompFast
+              </span>
+<span class="font-bold text-tertiary">GRÁTIS</span>
+</div>
+<div class="hidden flex justify-between items-center text-tertiary font-semibold" id="coupon-row">
+<span class="flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[16px]">sell</span>
+                Desconto Cupom (<span id="coupon-name-display">FAST20</span>)
+              </span>
+<span id="summary-coupon-discount">-R$ 0,00</span>
+</div>
+<div class="flex justify-between items-center text-tertiary font-semibold">
+<span>Desconto de Campanha</span>
+<span id="summary-promo-discount">-R$ 45,00</span>
+</div>
+<div class="h-px bg-surface-container my-space-xs"></div>
+<div class="flex justify-between items-baseline">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Total a pagar</span>
+<span class="text-[11px] text-on-surface-variant">Em até 12x sem juros no cartão</span>
+</div>
+<div class="text-right">
+<span class="font-price-hero text-price-hero text-on-surface font-bold" id="summary-final-total">R$ 333,90</span>
+</div>
+</div>
+</div>
+<!-- Payment Methods Selector -->
+<div class="mt-space-sm flex flex-col gap-space-sm">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold">Forma de Pagamento Imediata:</label>
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="payment-method-tab flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container text-secondary font-label-md text-label-md transition-all ring-2 ring-secondary" data-method="pix" id="tab-pix">
+<span class="material-symbols-outlined text-[24px]">qr_code_2</span>
+<span class="font-bold mt-space-2xs">PIX Dinâmico</span>
+<span class="text-[10px] text-tertiary font-bold">Aprovação Imediata</span>
+</button>
+<button class="payment-method-tab flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md transition-all hover:bg-surface-container" data-method="card" id="tab-card">
+<span class="material-symbols-outlined text-[24px]">credit_card</span>
+<span class="font-bold mt-space-2xs">Cartão de Crédito</span>
+<span class="text-[10px] text-on-surface-variant">Até 12x sem juros</span>
+</button>
+</div>
+<!-- PIX Panel View -->
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col items-center gap-space-xs text-center mt-space-xs" id="panel-pix">
+<div class="p-space-xs bg-surface-container-lowest rounded shadow-sm">
+<!-- Dynamic SVG QR Code Simulation -->
+<svg class="w-32 h-32 text-on-surface" fill="currentColor" viewbox="0 0 100 100">
+<path d="M0 0h30v30H0zm5 5v20h20V5zm5 5h10v10H10zM70 0h30v30H70zm5 5v20h20V5zm5 5h10v10H80zM0 70h30v30H0zm5 5v20h20V5zm5 5h10v10H10zM35 10h10v10H35zm15 0h10v10H50zm-15 15h10v10H35zm15 15h10v10H50zm15 0h10v10H65zm-30 15h10v10H35zm15 15h10v10H50zm15-15h10v10H65zm15 0h10v10H80zm0 15h10v10H80zm-15 15h10v10H65zm15 0h10v10H80z"></path>
+</svg>
+</div>
+<span class="font-badge text-badge text-tertiary font-bold">QR CODE GERADO AUTOMATICAMENTE</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">
+                Copie a chave Pix Copia e Cola ou aponte a câmera do aplicativo do seu banco:
+              </p>
+<div class="flex items-center gap-space-2xs w-full">
+<input class="bg-surface-container-lowest text-[11px] p-space-xs rounded w-full text-outline truncate font-mono" id="pix-copy-input" readonly="" value="00020126580014br.gov.bcb.pix0136fast-supabase-checkout-9921475204000053039865802BR"/>
+<button class="px-space-sm py-space-xs bg-secondary text-on-secondary rounded text-label-sm font-label-sm flex items-center gap-space-2xs whitespace-nowrap" id="btn-copy-pix">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+                  Copiar
+                </button>
+</div>
+</div>
+<!-- Card Panel View (Hidden by default) -->
+<div class="hidden bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-xs mt-space-xs" id="panel-card">
+<input class="w-full bg-surface-container-lowest p-space-xs rounded text-body-sm font-body-sm focus:outline-none" placeholder="Número do Cartão" type="text"/>
+<div class="grid grid-cols-2 gap-space-xs">
+<input class="w-full bg-surface-container-lowest p-space-xs rounded text-body-sm font-body-sm focus:outline-none" placeholder="Validade (MM/AA)" type="text"/>
+<input class="w-full bg-surface-container-lowest p-space-xs rounded text-body-sm font-body-sm focus:outline-none" placeholder="CVV" type="text"/>
+</div>
+<select class="w-full bg-surface-container-lowest p-space-xs rounded text-body-sm font-body-sm focus:outline-none">
+<option>1x sem juros (Total à vista)</option>
+<option>3x sem juros</option>
+<option>6x sem juros</option>
+<option>12x sem juros</option>
+</select>
+</div>
+</div>
+<!-- Checkout Action Button -->
+<div class="mt-space-lg flex flex-col gap-space-xs">
+<button class="w-full py-space-md bg-secondary text-on-secondary font-headline-sm text-headline-sm rounded-lg shadow-md hover:bg-on-secondary-fixed-variant transition-all transform active:scale-[0.99] flex items-center justify-center gap-space-xs font-bold" id="btn-confirm-order">
+<span class="material-symbols-outlined text-[22px]">lock</span>
+              Confirmar Pedido & Finalizar Compra
+            </button>
+<p class="text-center font-body-sm text-body-sm text-on-surface-variant text-[11px] mt-space-2xs">
+              Ao confirmar, seu pedido será salvo diretamente nas tabelas <code class="text-secondary font-semibold">vendas</code> e <code class="text-secondary font-semibold">itens_venda</code>.
+            </p>
+</div>
+<!-- Trust Badges & Safety Notices -->
+<div class="mt-space-lg pt-space-md border-t border-surface-container flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified_user</span>
+<span>Compra 100% Protegida com Criptografia SSL</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">inventory_2</span>
+<span>Sem cobrança de frete surpresa nem burocracia</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[18px]">receipt_long</span>
+<span>Emissão automática de comprovante e rastreio</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Notification Toast Modal -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-32 opacity-0 transition-all duration-300 pointer-events-none max-w-sm w-full bg-surface-container-lowest text-on-surface p-space-md rounded-xl shadow-2xl flex items-start gap-space-sm border-l-4 border-tertiary" id="checkout-toast">
+<span class="material-symbols-outlined text-tertiary text-[24px]" id="toast-icon">check_circle</span>
+<div class="flex-1">
+<h4 class="font-label-md text-label-md font-bold" id="toast-title">Pedido Processado!</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="toast-message">Registro criado com sucesso no Supabase.</p>
+</div>
+</div>
+</div>
+<script>
+  (function initCheckoutEngine() {
+    // State
+    const state = {
+      items: [
+        { id: 101, name: 'Teclado Mecânico Gamer Pro Wireless Low Profile', unitPrice: 249.90, promoUnit: 30.00, qty: 1 },
+        { id: 102, name: 'Mouse Óptico Sem Fio 16.000 DPI Ultra Leve', unitPrice: 129.00, promoUnit: 15.00, qty: 1 }
+      ],
+      appliedCoupon: null,
+      paymentMethod: 'pix'
+    };
+
+    // Valid coupons catalogue
+    const COUPONS_DATABASE = {
+      'FAST20': { type: 'percent', value: 0.20, minSubtotal: 200, description: '20% OFF aplicado para pedidos acima de R$ 200' },
+      'COMPRA10': { type: 'fixed', value: 10.00, minSubtotal: 100, description: 'R$ 10,00 OFF em compras acima de R$ 100' }
+    };
+
+    // DOM Elements
+    const subtotalEl = document.getElementById('summary-subtotal');
+    const promoDiscountEl = document.getElementById('summary-promo-discount');
+    const couponRowEl = document.getElementById('coupon-row');
+    const couponDiscountEl = document.getElementById('summary-coupon-discount');
+    const couponNameDisplayEl = document.getElementById('coupon-name-display');
+    const finalTotalEl = document.getElementById('summary-final-total');
+    const couponInput = document.getElementById('coupon-input');
+    const couponFeedback = document.getElementById('coupon-feedback');
+    const cartCountBadge = document.getElementById('cart-count-badge');
+    
+    const tabPix = document.getElementById('tab-pix');
+    const tabCard = document.getElementById('tab-card');
+    const panelPix = document.getElementById('panel-pix');
+    const panelCard = document.getElementById('panel-card');
+    const btnConfirmOrder = document.getElementById('btn-confirm-order');
+
+    function formatBRL(val) {
+      return 'R$ ' + val.toFixed(2).replace('.', ',');
+    }
+
+    function calculateTotals() {
+      let subtotal = 0;
+      let totalPromo = 0;
+      let count = 0;
+
+      state.items.forEach(item => {
+        subtotal += item.unitPrice * item.qty;
+        totalPromo += item.promoUnit * item.qty;
+        count += item.qty;
+      });
+
+      let couponDeduction = 0;
+      if (state.appliedCoupon) {
+        if (state.appliedCoupon.type === 'percent') {
+          couponDeduction = subtotal * state.appliedCoupon.value;
+        } else {
+          couponDeduction = state.appliedCoupon.value;
+        }
+      }
+
+      const grandTotal = Math.max(0, subtotal - couponDeduction);
+
+      // Render
+      subtotalEl.textContent = formatBRL(subtotal);
+      promoDiscountEl.textContent = '-' + formatBRL(totalPromo);
+      cartCountBadge.textContent = count;
+
+      if (state.appliedCoupon) {
+        couponRowEl.classList.remove('hidden');
+        couponNameDisplayEl.textContent = state.appliedCoupon.code;
+        couponDiscountEl.textContent = '-' + formatBRL(couponDeduction);
+      } else {
+        couponRowEl.classList.add('hidden');
+      }
+
+      finalTotalEl.textContent = formatBRL(grandTotal);
+
+      // LocalStorage persistence simulation
+      try {
+        localStorage.setItem('compfast_cart_state', JSON.stringify({
+          items: state.items,
+          coupon: state.appliedCoupon ? state.appliedCoupon.code : null
+        }));
+      } catch (e) {
+        // Storage safe fallback
+      }
+    }
+
+    // Attach Cart Quantity Controls
+    document.querySelectorAll('.cart-item').forEach(card => {
+      const id = parseInt(card.getAttribute('data-id'), 10);
+      const minusBtn = card.querySelector('.qty-btn-minus');
+      const plusBtn = card.querySelector('.qty-btn-plus');
+      const removeBtn = card.querySelector('.remove-item-btn');
+      const qtyVal = card.querySelector('.qty-val');
+      const itemTotalDisplay = card.querySelector('.item-total-display');
+
+      const updateCardUI = () => {
+        const item = state.items.find(i => i.id === id);
+        if (!item) {
+          card.remove();
+          return;
+        }
+        qtyVal.textContent = item.qty;
+        itemTotalDisplay.textContent = formatBRL(item.unitPrice * item.qty);
+      };
+
+      minusBtn.addEventListener('click', () => {
+        const item = state.items.find(i => i.id === id);
+        if (item && item.qty > 1) {
+          item.qty -= 1;
+          updateCardUI();
+          calculateTotals();
+        }
+      });
+
+      plusBtn.addEventListener('click', () => {
+        const item = state.items.find(i => i.id === id);
+        if (item) {
+          item.qty += 1;
+          updateCardUI();
+          calculateTotals();
+        }
+      });
+
+      removeBtn.addEventListener('click', () => {
+        state.items = state.items.filter(i => i.id !== id);
+        card.style.opacity = '0';
+        card.style.transform = 'scale(0.95)';
+        setTimeout(() => {
+          card.remove();
+          calculateTotals();
+          showToast('Item removido', 'Item excluído do carrinho com sucesso.', 'info');
+        }, 200);
+      });
+    });
+
+    // Coupon logic
+    document.getElementById('btn-apply-coupon').addEventListener('click', () => {
+      const code = couponInput.value.trim().toUpperCase();
+      couponFeedback.classList.remove('hidden', 'bg-tertiary-container/30', 'text-on-tertiary-container', 'bg-error-container', 'text-on-error-container');
+
+      if (!code) {
+        couponFeedback.classList.add('bg-error-container', 'text-on-error-container');
+        couponFeedback.textContent = 'Por favor, digite o código do cupom.';
+        return;
+      }
+
+      const found = COUPONS_DATABASE[code];
+      const subtotal = state.items.reduce((acc, curr) => acc + (curr.unitPrice * curr.qty), 0);
+
+      if (!found) {
+        couponFeedback.classList.add('bg-error-container', 'text-on-error-container');
+        couponFeedback.textContent = 'Cupom inválido ou expirado.';
+        state.appliedCoupon = null;
+      } else if (subtotal < found.minSubtotal) {
+        couponFeedback.classList.add('bg-error-container', 'text-on-error-container');
+        couponFeedback.textContent = `Válido apenas para compras acima de ${formatBRL(found.minSubtotal)}.`;
+        state.appliedCoupon = null;
+      } else {
+        state.appliedCoupon = { code, ...found };
+        couponFeedback.classList.add('bg-tertiary-container/30', 'text-on-tertiary-container');
+        couponFeedback.textContent = `✓ Cupom ${code} aplicado com sucesso! ${found.description}`;
+        showToast('Cupom Ativado!', `${code} aplicado ao seu resumo.`, 'sell');
+      }
+
+      calculateTotals();
+    });
+
+    // Payment Tab Switching
+    tabPix.addEventListener('click', () => {
+      state.paymentMethod = 'pix';
+      tabPix.classList.add('bg-surface-container', 'text-secondary', 'ring-2', 'ring-secondary');
+      tabPix.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+      tabCard.classList.remove('bg-surface-container', 'text-secondary', 'ring-2', 'ring-secondary');
+      tabCard.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+      panelPix.classList.remove('hidden');
+      panelCard.classList.add('hidden');
+    });
+
+    tabCard.addEventListener('click', () => {
+      state.paymentMethod = 'card';
+      tabCard.classList.add('bg-surface-container', 'text-secondary', 'ring-2', 'ring-secondary');
+      tabCard.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+      tabPix.classList.remove('bg-surface-container', 'text-secondary', 'ring-2', 'ring-secondary');
+      tabPix.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+      panelCard.classList.remove('hidden');
+      panelPix.classList.add('hidden');
+    });
+
+    // Pix Copy
+    document.getElementById('btn-copy-pix').addEventListener('click', () => {
+      const copyInput = document.getElementById('pix-copy-input');
+      copyInput.select();
+      navigator.clipboard?.writeText(copyInput.value);
+      showToast('Chave Copiada!', 'Código PIX copiado para a área de transferência.', 'content_copy');
+    });
+
+    // Toast Utility
+    function showToast(title, message, icon = 'check_circle') {
+      const toast = document.getElementById('checkout-toast');
+      document.getElementById('toast-title').textContent = title;
+      document.getElementById('toast-message').textContent = message;
+      document.getElementById('toast-icon').textContent = icon;
+
+      toast.classList.remove('opacity-0', 'translate-y-32', 'pointer-events-none');
+      toast.classList.add('opacity-100', 'translate-y-0');
+
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'translate-y-32', 'pointer-events-none');
+        toast.classList.remove('opacity-100', 'translate-y-0');
+      }, 4000);
+    }
+
+    // Checkout Confirmation Simulation with Supabase schema feedback
+    btnConfirmOrder.addEventListener('click', () => {
+      const nome = document.getElementById('reg-nome').value.trim();
+      const email = document.getElementById('reg-email').value.trim();
+      const telefone = document.getElementById('reg-telefone').value.trim();
+      const senha = document.getElementById('reg-senha').value.trim();
+
+      if (!nome || !email || !telefone || !senha) {
+        showToast('Complete seu cadastro', 'Preencha todos os campos do cadastro rápido para prosseguir.', 'warning');
+        document.getElementById('reg-nome').focus();
+        return;
+      }
+
+      btnConfirmOrder.disabled = true;
+      btnConfirmOrder.innerHTML = `
+        <span class="material-symbols-outlined animate-spin text-[20px]">progress_activity</span>
+        Processando Supabase RLS...
+      `;
+
+      setTimeout(() => {
+        btnConfirmOrder.disabled = false;
+        btnConfirmOrder.innerHTML = `
+          <span class="material-symbols-outlined text-[22px]">check_circle</span>
+          Pedido Concluído com Sucesso!
+        `;
+        btnConfirmOrder.classList.remove('bg-secondary');
+        btnConfirmOrder.classList.add('bg-tertiary', 'text-on-tertiary');
+
+        showToast(
+          'Sucesso!', 
+          `Venda #${Math.floor(100000 + Math.random() * 900000)} inserida em public.vendas e usuário autenticado.`,
+          'done_all'
+        );
+      }, 1200);
+    });
+
+    // Initial calculation
+    calculateTotals();
+  })();
+</script></main><footer class="w-full bg-surface-container-lowest mt-space-2xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="max-w-[1200px] mx-auto px-margin py-space-xl flex flex-col gap-space-lg"><div class="grid grid-cols-1 md:grid-cols-4 gap-space-lg font-body-sm text-body-sm"><div class="flex items-start gap-space-sm"><span class="material-symbols-outlined text-secondary text-[28px]">credit_card</span><div><span class="font-label-md text-label-md block text-on-surface">Pagamento 100% seguro</span><span class="text-on-surface-variant text-[12px]">Pague com Pix, Mercado Pago ou cartão de crédito em até 12x.</span></div></div><div class="flex items-start gap-space-sm"><span class="material-symbols-outlined text-tertiary text-[28px]">local_shipping</span><div><span class="font-label-md text-label-md block text-on-surface">Frete Rápido CompFast</span><span class="text-on-surface-variant text-[12px]">Entregas no mesmo dia para milhares de produtos selecionados.</span></div></div><div class="flex items-start gap-space-sm"><span class="material-symbols-outlined text-secondary text-[28px]">verified_user</span><div><span class="font-label-md text-label-md block text-on-surface">Compra Garantida</span><span class="text-on-surface-variant text-[12px]">Receba o produto que está esperando ou devolvemos seu dinheiro.</span></div></div><div class="flex items-start gap-space-sm"><span class="material-symbols-outlined text-tertiary text-[28px]">cloud_sync</span><div><span class="font-label-md text-label-md block text-on-surface">Supabase Cloud Ativo</span><span class="text-on-surface-variant text-[12px]">Catálogo e transações sincronizados em tempo real via Edge.</span></div></div></div><div class="h-px w-full bg-surface-container-high"></div><div class="flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-body-sm text-body-sm"><div class="flex flex-wrap gap-space-md"><a class="hover:text-on-surface" data-path="trabalhe-conosco" href="#">Trabalhe conosco</a><a class="hover:text-on-surface" data-path="termos-e-condicoes" href="#">Termos e condições</a><a class="hover:text-on-surface" data-path="politica-de-privacidade" href="#">Como cuidamos da sua privacidade</a><a class="hover:text-on-surface" data-path="acessibilidade" href="#">Acessibilidade</a><a class="hover:text-on-surface" data-path="contato" href="#">Contato</a><a class="hover:text-on-surface" data-path="defesa-do-consumidor" href="#">Código de Defesa do Consumidor</a></div><div class="text-xs text-on-surface-variant text-right">© 2024 CompFast Marketplace Ltda. CNPJ 00.000.000/0001-00.</div></div></div></footer></body></html>

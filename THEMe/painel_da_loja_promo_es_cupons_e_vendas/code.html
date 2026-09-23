@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-primary-fixed": "#201c00", "surface-container": "#f0eded", "outline-variant": "#cdc7aa", "error": "#ba1a1a", "surface": "#fbf9f8", "secondary-fixed-dim": "#adc6ff", "surface-bright": "#fbf9f8", "surface-container-highest": "#e4e2e1", "on-primary-fixed-variant": "#504700", "on-error-container": "#93000a", "outline": "#7c775f", "surface-dim": "#dcd9d9", "surface-tint": "#6a5f00", "error-container": "#ffdad6", "on-secondary-fixed-variant": "#004493", "on-secondary-fixed": "#001a41", "primary-container": "#ffe600", "secondary-fixed": "#d8e2ff", "inverse-primary": "#dec800", "inverse-surface": "#303030", "surface-container-high": "#eae8e7", "on-primary": "#ffffff", "on-tertiary-container": "#007637", "on-tertiary-fixed-variant": "#005224", "on-tertiary-fixed": "#00210b", "tertiary-fixed": "#78fc9b", "inverse-on-surface": "#f3f0f0", "on-surface-variant": "#4b4731", "on-tertiary": "#ffffff", "on-surface": "#1b1c1c", "surface-container-lowest": "#ffffff", "primary-fixed": "#fde400", "background": "#fbf9f8", "primary-fixed-dim": "#dec800", "surface-variant": "#e4e2e1", "on-error": "#ffffff", "tertiary": "#006d32", "secondary-container": "#1171e7", "on-background": "#1b1c1c", "tertiary-container": "#7bff9d", "tertiary-fixed-dim": "#5adf81", "surface-container-low": "#f6f3f2", "on-secondary-container": "#fefcff", "on-primary-container": "#726600", "on-secondary": "#ffffff", "secondary": "#0058bb", "primary": "#6a5f00" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "gutter": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "space-2xl": "3rem", "space-2xs": "0.125rem", "gutter-desktop": "1.5rem", "margin": "1rem", "space-xs": "0.25rem", "margin-desktop": "2rem", "space-lg": "1.5rem", "space-xl": "2rem" }, fontFamily: { "display-lg": ["Inter"], "display-lg-mobile": ["Inter"], "headline-lg": ["Inter"], "label-sm": ["Inter"], "body-md": ["Inter"], "price-card": ["Inter"], "price-hero": ["Inter"], "headline-lg-mobile": ["Inter"], "badge": ["Inter"], "headline-md": ["Inter"], "body-lg": ["Inter"], "price-fraction": ["Inter"], "headline-sm": ["Inter"], "body-sm": ["Inter"], "label-md": ["Inter"] }, fontSize: { "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "display-lg-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "price-card": ["24px", { "lineHeight": "28px", "fontWeight": "400" }], "price-hero": ["36px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "300" }], "headline-lg-mobile": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "badge": ["11px", { "lineHeight": "12px", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-md": ["20px", { "lineHeight": "26px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "price-fraction": ["14px", { "lineHeight": "14px", "fontWeight": "400" }], "headline-sm": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-md": ["14px", { "lineHeight": "18px", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest z-50 flex flex-col shadow-[0_1px_8px_rgba(0,0,0,0.06)]"><div class="h-16 px-space-md flex items-center justify-between bg-primary-container"><div class="flex items-center gap-space-xs"><img alt="CompFast Brand Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3PeHRvQJh4d0V8OGW7X-GPtTnXn9DgowZ__M0zcBXtbsMc5Ei-kZMGK_J-XOcj3G5M9VN_hhfENFE0QJGwxNEQVk-6x4zHkytBF0O0zOM0Em9U_Ukf0CXSykEhXOGlGkQKtVEd4vlGBoO_ZXquus_fegnh4jZuQNy1jM8LCKECSvsy0YTOC66nhdXE88oy7CukYHEGEEmVYpw_GwItGRBahxSE84GEEb1_2_WguvrJNwXwmzLscnI"/><span class="font-headline-sm text-headline-sm text-on-primary-fixed">CompFast</span></div><span class="font-badge text-badge px-space-xs py-space-2xs bg-secondary text-on-secondary rounded uppercase">Admin</span></div><div class="p-space-md bg-surface-container-low"><div class="flex items-center justify-between text-xs text-on-surface-variant"><span class="flex items-center gap-1 font-semibold text-tertiary"><span class="material-symbols-outlined text-[14px]">database</span> Supabase DB</span><span class="text-[11px] text-tertiary font-mono font-bold">Conectado</span></div></div><nav class="flex-1 px-space-sm py-space-md flex flex-col gap-space-2xs" data-active-classes="bg-secondary-fixed text-on-secondary-fixed font-semibold"><a class="flex items-center gap-space-sm px-space-md py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="painel-admin" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span>Painel Geral</a><a class="flex items-center gap-space-sm px-space-md py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="catalogo-e-produtos" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span>Catálogo & Produtos</a><a class="flex items-center gap-space-sm px-space-md py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="categorias-admin" href="#"><span class="material-symbols-outlined text-[20px]">category</span>Categorias</a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-xs rounded transition-colors bg-secondary-fixed text-on-secondary-fixed font-semibold" data-path="promocoes-e-ofertas" href="#"><span class="material-symbols-outlined text-[20px]">bolt</span>Promoções & Ofertas</a><a class="flex items-center gap-space-sm px-space-md py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="cupons-admin" href="#"><span class="material-symbols-outlined text-[20px]">local_offer</span>Cupons de Desconto</a><a class="flex items-center gap-space-sm px-space-md py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="vendas-e-pedidos" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span>Vendas & Pedidos</a><a class="flex items-center gap-space-sm px-space-md py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="clientes" href="#"><span class="material-symbols-outlined text-[20px]">group</span>Clientes</a></nav><div class="p-space-md bg-surface-container-lowest mt-auto"><a class="w-full flex items-center justify-center gap-space-xs py-space-xs bg-primary-container hover:bg-primary-fixed text-on-primary-fixed rounded font-label-md text-label-md transition-colors" data-path="vitrine" href="#"><span class="material-symbols-outlined text-[18px]">storefront</span>Voltar à Vitrine</a></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-sm text-on-surface"><span class="font-label-md text-label-md font-semibold text-secondary">Gestão CompFast</span><span class="text-outline-variant">/</span><span class="text-xs text-on-surface-variant font-mono">v2.4.0 (Supabase Realtime)</span></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-2xs rounded"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant">Sincronizado</span></div><button class="text-on-surface-variant hover:text-on-surface"><span class="material-symbols-outlined text-[22px]">notifications</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 w-full px-gutter-desktop bg-surface"><div class="flex flex-col w-full pb-space-2xl">
+<!-- Top Bar Metrics & Dynamic Context -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md py-space-lg">
+<div>
+<div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm uppercase tracking-wider mb-space-2xs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Backoffice Supabase • Instância Live</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Operações & Crescimento</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Gerencie campanhas promocionais, cupons, fluxo simplificado de vendas e catálogo de compradores.</p>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center bg-surface-container-lowest px-space-md py-space-xs rounded-lg shadow-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Receita Hoje</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">R$ 14.820<span class="text-xs text-on-surface-variant">,50</span></span>
+</div>
+<span class="material-symbols-outlined text-tertiary ml-space-md text-[24px]">trending_up</span>
+</div>
+<div class="flex items-center bg-surface-container-lowest px-space-md py-space-xs rounded-lg shadow-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Conversão Ativa</span>
+<span class="font-headline-sm text-headline-sm text-tertiary font-semibold">+18.4%</span>
+</div>
+<span class="material-symbols-outlined text-secondary ml-space-md text-[24px]">bolt</span>
+</div>
+</div>
+</div>
+<!-- Tab Navigation Strip -->
+<div class="flex items-center gap-space-xs bg-surface-container-low p-space-2xs rounded-xl shadow-inner mb-space-lg overflow-x-auto">
+<button class="tab-trigger flex items-center gap-space-xs px-space-md py-space-xs rounded-lg font-label-md text-label-md transition-all bg-surface-container-lowest text-secondary shadow-sm" id="tab-btn-promocoes" onclick="switchTab('promocoes')">
+<span class="material-symbols-outlined text-[18px]">percent</span>
+<span>Promoções Ativas</span>
+<span class="px-1.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-[11px] font-bold">4</span>
+</button>
+<button class="tab-trigger flex items-center gap-space-xs px-space-md py-space-xs rounded-lg font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface" id="tab-btn-cupons" onclick="switchTab('cupons')">
+<span class="material-symbols-outlined text-[18px]">confirmation_number</span>
+<span>Cupons de Desconto</span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant text-[11px] font-bold">6</span>
+</button>
+<button class="tab-trigger flex items-center gap-space-xs px-space-md py-space-xs rounded-lg font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface" id="tab-btn-vendas" onclick="switchTab('vendas')">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span>Vendas & Pedidos</span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant text-[11px] font-bold">12</span>
+</button>
+<button class="tab-trigger flex items-center gap-space-xs px-space-md py-space-xs rounded-lg font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface" id="tab-btn-clientes" onclick="switchTab('clientes')">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+<span>Clientes da Base</span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant text-[11px] font-bold">340</span>
+</button>
+</div>
+<!-- TAB 1: GESTÃO DE PROMOÇÕES -->
+<section class="tab-pane flex flex-col gap-space-lg" id="section-promocoes">
+<!-- Header Actions -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-[24px]">local_fire_department</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Tabela promocoes</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Descontos dinâmicos aplicados em tempo real na vitrine pública.</p>
+</div>
+</div>
+<button class="flex items-center gap-space-xs px-space-md py-space-xs bg-secondary hover:bg-on-secondary-fixed-variant text-on-secondary font-label-md text-label-md rounded-lg shadow-sm transition-colors" onclick="openModal('modal-promocao')">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Criar Promoção</span>
+</button>
+</div>
+<!-- Promocoes Cards / Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- Promo 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-4 -top-4 w-24 h-24 bg-primary-container/20 rounded-full blur-xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-badge text-badge px-space-xs py-space-2xs bg-secondary-fixed text-on-secondary-fixed rounded uppercase font-bold">Categoria Inteira</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-tertiary"></div>
+</label>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-space-2xs">Semana Gamer de Verão</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Hardware, Placas de Vídeo & Periféricos</p>
+<div class="flex items-baseline gap-space-xs mb-space-md">
+<span class="font-display-lg text-display-lg text-tertiary font-bold">25%</span>
+<span class="font-label-sm text-label-sm text-tertiary uppercase font-bold tracking-wider">OFF DIRETO</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-error">hourglass_bottom</span>
+<span class="font-semibold text-error">Expira em 3 dias</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-mono">Até 28/10</span>
+</div>
+</div>
+<!-- Promo 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-badge text-badge px-space-xs py-space-2xs bg-surface-container-high text-on-surface-variant rounded uppercase font-bold">Produto Específico</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-tertiary"></div>
+</label>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-space-2xs">Liquid Flash NVMe 2TB</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">SSD NVMe M.2 Gen4 Ultra-Speed</p>
+<div class="flex items-baseline gap-space-xs mb-space-md">
+<span class="font-display-lg text-display-lg text-tertiary font-bold">40%</span>
+<span class="font-label-sm text-label-sm text-tertiary uppercase font-bold tracking-wider">OFF FLASH</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-error">timer</span>
+<span class="font-semibold text-error">Expira em 6 horas</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-mono">Termina 23:59</span>
+</div>
+</div>
+<!-- Promo 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-badge text-badge px-space-xs py-space-2xs bg-secondary-fixed text-on-secondary-fixed rounded uppercase font-bold">Categoria Inteira</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-tertiary"></div>
+</label>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-space-2xs">Smart Office & Cadeiras</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Ergonomia e Conforto para Devs</p>
+<div class="flex items-baseline gap-space-xs mb-space-md">
+<span class="font-display-lg text-display-lg text-on-surface-variant font-bold">15%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold tracking-wider">PAUSADA</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">pause_circle</span>
+<span>Programada Nov/24</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-mono">Rascunho</span>
+</div>
+</div>
+</div>
+</section>
+<!-- TAB 2: GESTÃO DE CUPONS -->
+<section class="tab-pane hidden flex flex-col gap-space-lg" id="section-cupons">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[24px]">local_offer</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Tabela cupons</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Códigos promocionais para validação instantânea no checkout.</p>
+</div>
+</div>
+<button class="flex items-center gap-space-xs px-space-md py-space-xs bg-secondary hover:bg-on-secondary-fixed-variant text-on-secondary font-label-md text-label-md rounded-lg shadow-sm transition-colors" onclick="openModal('modal-cupom')">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>+ Novo Cupom</span>
+</button>
+</div>
+<!-- Cupons Table Container -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-md text-body-md">
+<thead class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<tr>
+<th class="py-space-sm px-space-md">Código</th>
+<th class="py-space-sm px-space-md">Tipo & Desconto</th>
+<th class="py-space-sm px-space-md">Gasto Mínimo</th>
+<th class="py-space-sm px-space-md">Usos Concluídos</th>
+<th class="py-space-sm px-space-md">Validade</th>
+<th class="py-space-sm px-space-md">Status</th>
+<th class="py-space-sm px-space-md text-right">Ações</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-2xs bg-primary-container text-on-primary-fixed font-mono font-bold text-label-md rounded border border-on-primary-container/20">PROMO10</span>
+<button class="text-on-surface-variant hover:text-secondary" title="Copiar"><span class="material-symbols-outlined text-[16px]">content_copy</span></button>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-semibold text-tertiary">10% OFF</span>
+<span class="text-xs text-on-surface-variant block font-mono">Percentual</span>
+</td>
+<td class="py-space-md px-space-md font-mono text-on-surface">R$ 150,00</td>
+<td class="py-space-md px-space-md">
+<div class="w-36">
+<div class="flex justify-between text-xs font-mono mb-1">
+<span class="font-semibold text-on-surface">84/100</span>
+<span class="text-on-surface-variant">84%</span>
+</div>
+<div class="h-1.5 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 84%"></div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md text-on-surface-variant font-mono text-xs">31/12/2024</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-space-xs py-space-2xs rounded-full bg-tertiary/10 text-tertiary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Ativo
+                </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="p-1 text-on-surface-variant hover:text-error transition-colors" title="Desativar"><span class="material-symbols-outlined text-[18px]">power_settings_new</span></button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-2xs bg-surface-container text-on-surface font-mono font-bold text-label-md rounded">BEMVINDO50</span>
+<button class="text-on-surface-variant hover:text-secondary" title="Copiar"><span class="material-symbols-outlined text-[16px]">content_copy</span></button>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-semibold text-secondary">R$ 50,00 OFF</span>
+<span class="text-xs text-on-surface-variant block font-mono">Fixo em Reais</span>
+</td>
+<td class="py-space-md px-space-md font-mono text-on-surface">R$ 400,00</td>
+<td class="py-space-md px-space-md">
+<div class="w-36">
+<div class="flex justify-between text-xs font-mono mb-1">
+<span class="font-semibold text-on-surface">45/500</span>
+<span class="text-on-surface-variant">9%</span>
+</div>
+<div class="h-1.5 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-tertiary rounded-full" style="width: 9%"></div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md text-on-surface-variant font-mono text-xs">Indeterminado</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-space-xs py-space-2xs rounded-full bg-tertiary/10 text-tertiary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Ativo
+                </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="p-1 text-on-surface-variant hover:text-error transition-colors" title="Desativar"><span class="material-symbols-outlined text-[18px]">power_settings_new</span></button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-2xs bg-surface-container-high text-on-surface-variant font-mono font-bold text-label-md rounded line-through">BLACKFRIDAY</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-semibold text-on-surface-variant">20% OFF</span>
+<span class="text-xs text-on-surface-variant block font-mono">Percentual</span>
+</td>
+<td class="py-space-md px-space-md font-mono text-on-surface-variant">R$ 300,00</td>
+<td class="py-space-md px-space-md">
+<div class="w-36">
+<div class="flex justify-between text-xs font-mono mb-1">
+<span class="font-semibold text-error">200/200</span>
+<span class="text-error font-bold">100%</span>
+</div>
+<div class="h-1.5 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-error rounded-full" style="width: 100%"></div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md text-on-surface-variant font-mono text-xs">Expirado</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-space-xs py-space-2xs rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+                  Esgotado
+                </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="p-1 text-on-surface-variant hover:text-secondary transition-colors" title="Reativar"><span class="material-symbols-outlined text-[18px]">restart_alt</span></button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- TAB 3: GESTÃO DE VENDAS -->
+<section class="tab-pane hidden flex flex-col gap-space-lg" id="section-vendas">
+<!-- Clean Minimalist Header -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[24px]">receipt_long</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Tabelas vendas & itens_venda</h2>
+<span class="font-badge text-badge px-space-xs py-0.5 bg-surface-container-high text-on-surface-variant rounded font-mono">Sem NF / Sem Frete Pesado</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Fluxo direto e enxuto de confirmação e status da compra pelo lojista.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="text-xs text-on-surface-variant font-mono">Filtrar status:</span>
+<select class="bg-surface-container-low text-on-surface font-label-sm text-label-sm py-1 px-space-xs rounded border-none focus:ring-1 focus:ring-secondary">
+<option>Todos os pedidos</option>
+<option>Pago</option>
+<option>Preparando</option>
+<option>Entregue</option>
+<option>Cancelado</option>
+</select>
+</div>
+</div>
+<!-- Orders Table -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-md text-body-md">
+<thead class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<tr>
+<th class="py-space-sm px-space-md">ID</th>
+<th class="py-space-sm px-space-md">Cliente</th>
+<th class="py-space-sm px-space-md">Data / Hora</th>
+<th class="py-space-sm px-space-md">Itens Comprados</th>
+<th class="py-space-sm px-space-md">Cupom</th>
+<th class="py-space-sm px-space-md">Total</th>
+<th class="py-space-sm px-space-md">Status</th>
+<th class="py-space-sm px-space-md text-right">Mudar Status</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<!-- Pedido 1 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-md font-mono text-secondary font-bold">#ORD-9024</td>
+<td class="py-space-md px-space-md">
+<span class="font-semibold block text-on-surface">Lucas Silveira</span>
+<span class="text-xs text-on-surface-variant">lucas.silv@gmail.com</span>
+</td>
+<td class="py-space-md px-space-md font-mono text-xs text-on-surface-variant">
+                Hoje, 14:32
+              </td>
+<td class="py-space-md px-space-md">
+<span class="text-sm text-on-surface">1x Teclado Mecânico RGB Pro + 1x Cabo USB-C</span>
+<span class="text-xs text-on-surface-variant block font-mono">2 volumes</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-mono text-xs bg-surface-container px-1.5 py-0.5 rounded text-on-surface">PROMO10</span>
+</td>
+<td class="py-space-md px-space-md font-semibold text-on-surface font-mono">
+                R$ 489,90
+              </td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-1 rounded text-label-sm font-label-sm font-semibold bg-tertiary-container/30 text-on-tertiary-container">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span> Pago
+                </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<select class="text-xs bg-surface-container py-1 px-2 rounded border-none font-semibold text-on-surface focus:ring-1 focus:ring-secondary">
+<option>Pago</option>
+<option selected="">Preparando</option>
+<option>Entregue</option>
+<option>Cancelado</option>
+</select>
+</td>
+</tr>
+<!-- Pedido 2 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-md font-mono text-secondary font-bold">#ORD-9023</td>
+<td class="py-space-md px-space-md">
+<span class="font-semibold block text-on-surface">Mariana Takahashi</span>
+<span class="text-xs text-on-surface-variant">m.takahashi@uol.com.br</span>
+</td>
+<td class="py-space-md px-space-md font-mono text-xs text-on-surface-variant">
+                Hoje, 11:15
+              </td>
+<td class="py-space-md px-space-md">
+<span class="text-sm text-on-surface">1x Monitor UltraWide 29" IPS 75Hz</span>
+<span class="text-xs text-on-surface-variant block font-mono">1 volume</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="text-xs text-on-surface-variant italic">—</span>
+</td>
+<td class="py-space-md px-space-md font-semibold text-on-surface font-mono">
+                R$ 1.150,00
+              </td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-1 rounded text-label-sm font-label-sm font-semibold bg-secondary-fixed text-on-secondary-fixed">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Preparando
+                </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<select class="text-xs bg-surface-container py-1 px-2 rounded border-none font-semibold text-on-surface focus:ring-1 focus:ring-secondary">
+<option>Pago</option>
+<option>Preparando</option>
+<option selected="">Entregue</option>
+<option>Cancelado</option>
+</select>
+</td>
+</tr>
+<!-- Pedido 3 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-md font-mono text-secondary font-bold">#ORD-9022</td>
+<td class="py-space-md px-space-md">
+<span class="font-semibold block text-on-surface">Rodrigo Fontes</span>
+<span class="text-xs text-on-surface-variant">fontes.dev@outlook.com</span>
+</td>
+<td class="py-space-md px-space-md font-mono text-xs text-on-surface-variant">
+                Ontem, 20:04
+              </td>
+<td class="py-space-md px-space-md">
+<span class="text-sm text-on-surface">1x Cadeira Ergonômica Pro Mesh</span>
+<span class="text-xs text-on-surface-variant block font-mono">1 volume</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-mono text-xs bg-surface-container px-1.5 py-0.5 rounded text-on-surface">BEMVINDO50</span>
+</td>
+<td class="py-space-md px-space-md font-semibold text-on-surface font-mono">
+                R$ 890,00
+              </td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-1 rounded text-label-sm font-label-sm font-semibold bg-tertiary-fixed text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[14px]">check</span> Entregue
+                </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<span class="text-xs text-on-surface-variant font-mono">Finalizado</span>
+</td>
+</tr>
+<!-- Pedido 4 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-md font-mono text-secondary font-bold">#ORD-9021</td>
+<td class="py-space-md px-space-md">
+<span class="font-semibold block text-on-surface">Carlos Henrique Dias</span>
+<span class="text-xs text-on-surface-variant">carlos.h@bol.com.br</span>
+</td>
+<td class="py-space-md px-space-md font-mono text-xs text-on-surface-variant">
+                Ontem, 16:20
+              </td>
+<td class="py-space-md px-space-md">
+<span class="text-sm text-on-surface">1x Placa de Vídeo RTX 4070 Dual</span>
+<span class="text-xs text-on-surface-variant block font-mono">1 volume</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="text-xs text-on-surface-variant italic">—</span>
+</td>
+<td class="py-space-md px-space-md font-semibold text-on-surface font-mono">
+                R$ 3.899,00
+              </td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-1 rounded text-label-sm font-label-sm font-semibold bg-primary-fixed-dim/30 text-on-primary-fixed">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span> Pendente
+                </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<select class="text-xs bg-surface-container py-1 px-2 rounded border-none font-semibold text-on-surface focus:ring-1 focus:ring-secondary">
+<option selected="">Pendente</option>
+<option>Pago</option>
+<option>Cancelado</option>
+</select>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- TAB 4: GESTÃO DE CLIENTES -->
+<section class="tab-pane hidden flex flex-col gap-space-lg" id="section-clientes">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[24px]">group</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Tabela clientes</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Contas sincronizadas via Supabase Auth e capturadas no checkout.</p>
+</div>
+</div>
+<div class="relative w-full sm:w-64">
+<span class="material-symbols-outlined absolute left-2.5 top-2.5 text-[18px] text-on-surface-variant">search</span>
+<input class="w-full pl-9 pr-space-sm py-1.5 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface border-none focus:ring-2 focus:ring-secondary placeholder-on-surface-variant/60" placeholder="Filtrar por nome ou e-mail..." type="text"/>
+</div>
+</div>
+<!-- Clientes Cards / Table -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-md text-body-md">
+<thead class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<tr>
+<th class="py-space-sm px-space-md">Cliente</th>
+<th class="py-space-sm px-space-md">Contato / Telefone</th>
+<th class="py-space-sm px-space-md">Pedidos Realizados</th>
+<th class="py-space-sm px-space-md">Total Investido</th>
+<th class="py-space-sm px-space-md">Último Acesso</th>
+<th class="py-space-sm px-space-md text-right">Histórico</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-secondary-fixed text-on-secondary-fixed font-bold font-label-md flex items-center justify-center">
+                    LS
+                  </div>
+<div>
+<span class="font-semibold block text-on-surface">Lucas Silveira</span>
+<span class="text-xs text-on-surface-variant">lucas.silv@gmail.com</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md font-mono text-on-surface text-sm">
+                (11) 98452-1100
+              </td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 font-semibold text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[16px]">receipt</span> 5 pedidos
+                </span>
+</td>
+<td class="py-space-md px-space-md font-mono font-semibold text-tertiary">
+                R$ 3.420,00
+              </td>
+<td class="py-space-md px-space-md text-xs font-mono text-on-surface-variant">
+                Hoje, 14:30
+              </td>
+<td class="py-space-md px-space-md text-right">
+<button class="text-secondary hover:underline font-label-sm text-label-sm">Ver Detalhes</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-primary-fixed-dim text-on-primary-fixed font-bold font-label-md flex items-center justify-center">
+                    MT
+                  </div>
+<div>
+<span class="font-semibold block text-on-surface">Mariana Takahashi</span>
+<span class="text-xs text-on-surface-variant">m.takahashi@uol.com.br</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md font-mono text-on-surface text-sm">
+                (11) 99120-7744
+              </td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 font-semibold text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[16px]">receipt</span> 2 pedidos
+                </span>
+</td>
+<td class="py-space-md px-space-md font-mono font-semibold text-tertiary">
+                R$ 1.840,50
+              </td>
+<td class="py-space-md px-space-md text-xs font-mono text-on-surface-variant">
+                Hoje, 11:15
+              </td>
+<td class="py-space-md px-space-md text-right">
+<button class="text-secondary hover:underline font-label-sm text-label-sm">Ver Detalhes</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-bold font-label-md flex items-center justify-center">
+                    RF
+                  </div>
+<div>
+<span class="font-semibold block text-on-surface">Rodrigo Fontes</span>
+<span class="text-xs text-on-surface-variant">fontes.dev@outlook.com</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md font-mono text-on-surface text-sm">
+                (21) 97130-9988
+              </td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 font-semibold text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[16px]">receipt</span> 8 pedidos
+                </span>
+</td>
+<td class="py-space-md px-space-md font-mono font-semibold text-tertiary">
+                R$ 8.910,00
+              </td>
+<td class="py-space-md px-space-md text-xs font-mono text-on-surface-variant">
+                Ontem, 20:00
+              </td>
+<td class="py-space-md px-space-md text-right">
+<button class="text-secondary hover:underline font-label-sm text-label-sm">Ver Detalhes</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- MODAL: CRIAR PROMOÇÃO -->
+<div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-sm z-50 flex items-center justify-center p-space-md hidden" id="modal-promocao">
+<div class="bg-surface-container-lowest rounded-xl max-w-lg w-full p-space-lg shadow-xl relative animate-in fade-in duration-200">
+<div class="flex items-center justify-between pb-space-sm mb-space-md border-b border-surface-container">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">add_circle</span>
+          Criar Nova Promoção
+        </h3>
+<button class="text-on-surface-variant hover:text-on-surface" onclick="closeModal('modal-promocao')">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<form class="flex flex-col gap-space-md" onsubmit="handleFormSubmit(event, 'modal-promocao')">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Título da Promoção</label>
+<input class="w-full px-space-sm py-2 bg-surface rounded border border-surface-container-highest focus:border-secondary focus:ring-1 focus:ring-secondary font-body-md text-body-md text-on-surface" placeholder="Ex: Mega Feirão de GPUs" required="" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Tipo de Vínculo</label>
+<select class="w-full px-space-sm py-2 bg-surface rounded border border-surface-container-highest focus:border-secondary font-body-md text-body-md text-on-surface" id="promo-target-type" onchange="togglePromoTarget(this.value)">
+<option value="categoria">Por Categoria</option>
+<option value="produto">Produto Individual</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Desconto (%)</label>
+<input class="w-full px-space-sm py-2 bg-surface rounded border border-surface-container-highest focus:border-secondary font-body-md text-body-md text-on-surface" max="99" min="1" placeholder="Ex: 20" required="" type="number"/>
+</div>
+</div>
+<div id="wrapper-categoria">
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Selecione a Categoria</label>
+<select class="w-full px-space-sm py-2 bg-surface rounded border border-surface-container-highest focus:border-secondary font-body-md text-body-md text-on-surface">
+<option>Hardware & Placas de Vídeo</option>
+<option>Periféricos & Áudio</option>
+<option>Monitores & Telas</option>
+<option>Cadeiras & Ergonomia</option>
+</select>
+</div>
+<div class="hidden" id="wrapper-produto">
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Selecione o Produto</label>
+<select class="w-full px-space-sm py-2 bg-surface rounded border border-surface-container-highest focus:border-secondary font-body-md text-body-md text-on-surface">
+<option>Teclado Mecânico RGB Pro</option>
+<option>SSD NVMe M.2 Gen4 2TB</option>
+<option>Monitor UltraWide 29" IPS</option>
+<option>Placa de Vídeo RTX 4070</option>
+</select>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Data Início</label>
+<input class="w-full px-space-sm py-2 bg-surface rounded border border-surface-container-highest font-body-md text-body-md text-on-surface" required="" type="date"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Data Expiração</label>
+<input class="w-full px-space-sm py-2 bg-surface rounded border border-surface-container-highest font-body-md text-body-md text-on-surface" required="" type="date"/>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm mt-space-sm pt-space-sm border-t border-surface-container">
+<button class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface" onclick="closeModal('modal-promocao')" type="button">Cancelar</button>
+<button class="px-space-md py-space-xs bg-secondary hover:bg-on-secondary-fixed-variant text-on-secondary font-label-md text-label-md rounded-lg shadow-sm" type="submit">Salvar no Supabase</button>
+</div>
+</form>
+</div>
+</div>
+<!-- MODAL: CRIAR CUPOM -->
+<div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-sm z-50 flex items-center justify-center p-space-md hidden" id="modal-cupom">
+<div class="bg-surface-container-lowest rounded-xl max-w-lg w-full p-space-lg shadow-xl relative animate-in fade-in duration-200">
+<div class="flex items-center justify-between pb-space-sm mb-space-md border-b border-surface-container">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">confirmation_number</span>
+          Novo Cupom de Desconto
+        </h3>
+<button class="text-on-surface-variant hover:text-on-surface" onclick="closeModal('modal-cupom')">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<form class="flex flex-col gap-space-md" onsubmit="handleFormSubmit(event, 'modal-cupom')">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Código do Cupom</label>
+<input class="w-full uppercase font-mono tracking-wider px-space-sm py-2 bg-surface rounded border border-surface-container-highest focus:border-secondary font-body-md text-body-md text-on-surface" placeholder="EX: VERAO15" required="" type="text" uppercase=""/>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Tipo de Aplicação</label>
+<select class="w-full px-space-sm py-2 bg-surface rounded border border-surface-container-highest focus:border-secondary font-body-md text-body-md text-on-surface">
+<option value="percent">Percentual (%)</option>
+<option value="fixed">Fixo em Reais (R$)</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Valor do Desconto</label>
+<input class="w-full px-space-sm py-2 bg-surface rounded border border-surface-container-highest focus:border-secondary font-body-md text-body-md text-on-surface" placeholder="Ex: 15 ou 50.00" required="" step="0.5" type="number"/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Valor Mínimo (R$)</label>
+<input class="w-full px-space-sm py-2 bg-surface rounded border border-surface-container-highest focus:border-secondary font-body-md text-body-md text-on-surface" placeholder="Ex: 150 (opcional)" step="1" type="number"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Limite Máximo de Usos</label>
+<input class="w-full px-space-sm py-2 bg-surface rounded border border-surface-container-highest focus:border-secondary font-body-md text-body-md text-on-surface" placeholder="Ex: 100" required="" type="number"/>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Data Limite de Validade</label>
+<input class="w-full px-space-sm py-2 bg-surface rounded border border-surface-container-highest font-body-md text-body-md text-on-surface" required="" type="date"/>
+</div>
+<div class="flex items-center justify-end gap-space-sm mt-space-sm pt-space-sm border-t border-surface-container">
+<button class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface" onclick="closeModal('modal-cupom')" type="button">Cancelar</button>
+<button class="px-space-md py-space-xs bg-secondary hover:bg-on-secondary-fixed-variant text-on-secondary font-label-md text-label-md rounded-lg shadow-sm" type="submit">Cadastrar Cupom</button>
+</div>
+</form>
+</div>
+</div>
+<script>
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-pane').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.tab-trigger').forEach(btn => {
+        btn.classList.remove('bg-surface-container-lowest', 'text-secondary', 'shadow-sm');
+        btn.classList.add('text-on-surface-variant');
+      });
+
+      const selectedPane = document.getElementById('section-' + tabId);
+      const selectedBtn = document.getElementById('tab-btn-' + tabId);
+
+      if (selectedPane && selectedBtn) {
+        selectedPane.classList.remove('hidden');
+        selectedBtn.classList.add('bg-surface-container-lowest', 'text-secondary', 'shadow-sm');
+        selectedBtn.classList.remove('text-on-surface-variant');
+      }
+    }
+
+    function openModal(modalId) {
+      const modal = document.getElementById(modalId);
+      if (modal) modal.classList.remove('hidden');
+    }
+
+    function closeModal(modalId) {
+      const modal = document.getElementById(modalId);
+      if (modal) modal.classList.add('hidden');
+    }
+
+    function togglePromoTarget(val) {
+      const cat = document.getElementById('wrapper-categoria');
+      const prod = document.getElementById('wrapper-produto');
+      if (val === 'categoria') {
+        cat.classList.remove('hidden');
+        prod.classList.add('hidden');
+      } else {
+        cat.classList.add('hidden');
+        prod.classList.remove('hidden');
+      }
+    }
+
+    function handleFormSubmit(e, modalId) {
+      e.preventDefault();
+      closeModal(modalId);
+    }
+  </script>
+</div></main></div></body></html>

@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-primary-fixed": "#201c00", "surface-container": "#f0eded", "outline-variant": "#cdc7aa", "error": "#ba1a1a", "surface": "#fbf9f8", "secondary-fixed-dim": "#adc6ff", "surface-bright": "#fbf9f8", "surface-container-highest": "#e4e2e1", "on-primary-fixed-variant": "#504700", "on-error-container": "#93000a", "outline": "#7c775f", "surface-dim": "#dcd9d9", "surface-tint": "#6a5f00", "error-container": "#ffdad6", "on-secondary-fixed-variant": "#004493", "on-secondary-fixed": "#001a41", "primary-container": "#ffe600", "secondary-fixed": "#d8e2ff", "inverse-primary": "#dec800", "inverse-surface": "#303030", "surface-container-high": "#eae8e7", "on-primary": "#ffffff", "on-tertiary-container": "#007637", "on-tertiary-fixed-variant": "#005224", "on-tertiary-fixed": "#00210b", "tertiary-fixed": "#78fc9b", "inverse-on-surface": "#f3f0f0", "on-surface-variant": "#4b4731", "on-tertiary": "#ffffff", "on-surface": "#1b1c1c", "surface-container-lowest": "#ffffff", "primary-fixed": "#fde400", "background": "#fbf9f8", "primary-fixed-dim": "#dec800", "surface-variant": "#e4e2e1", "on-error": "#ffffff", "tertiary": "#006d32", "secondary-container": "#1171e7", "on-background": "#1b1c1c", "tertiary-container": "#7bff9d", "tertiary-fixed-dim": "#5adf81", "surface-container-low": "#f6f3f2", "on-secondary-container": "#fefcff", "on-primary-container": "#726600", "on-secondary": "#ffffff", "secondary": "#0058bb", "primary": "#6a5f00" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "gutter": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "space-2xl": "3rem", "space-2xs": "0.125rem", "gutter-desktop": "1.5rem", "margin": "1rem", "space-xs": "0.25rem", "margin-desktop": "2rem", "space-lg": "1.5rem", "space-xl": "2rem" }, fontFamily: { "display-lg": ["Inter"], "display-lg-mobile": ["Inter"], "headline-lg": ["Inter"], "label-sm": ["Inter"], "body-md": ["Inter"], "price-card": ["Inter"], "price-hero": ["Inter"], "headline-lg-mobile": ["Inter"], "badge": ["Inter"], "headline-md": ["Inter"], "body-lg": ["Inter"], "price-fraction": ["Inter"], "headline-sm": ["Inter"], "body-sm": ["Inter"], "label-md": ["Inter"] }, fontSize: { "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "display-lg-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "price-card": ["24px", { "lineHeight": "28px", "fontWeight": "400" }], "price-hero": ["36px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "300" }], "headline-lg-mobile": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "badge": ["11px", { "lineHeight": "12px", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-md": ["20px", { "lineHeight": "26px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "price-fraction": ["14px", { "lineHeight": "14px", "fontWeight": "400" }], "headline-sm": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-md": ["14px", { "lineHeight": "18px", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest z-50 flex flex-col shadow-[0_1px_8px_rgba(0,0,0,0.06)]"><div class="h-16 px-space-md flex items-center justify-between bg-primary-container"><div class="flex items-center gap-space-xs"><img alt="CompFast Brand Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3PeHRvQJh4d0V8OGW7X-GPtTnXn9DgowZ__M0zcBXtbsMc5Ei-kZMGK_J-XOcj3G5M9VN_hhfENFE0QJGwxNEQVk-6x4zHkytBF0O0zOM0Em9U_Ukf0CXSykEhXOGlGkQKtVEd4vlGBoO_ZXquus_fegnh4jZuQNy1jM8LCKECSvsy0YTOC66nhdXE88oy7CukYHEGEEmVYpw_GwItGRBahxSE84GEEb1_2_WguvrJNwXwmzLscnI"/><span class="font-headline-sm text-headline-sm text-on-primary-fixed">CompFast</span></div><span class="font-badge text-badge px-space-xs py-space-2xs bg-secondary text-on-secondary rounded uppercase">Admin</span></div><div class="p-space-md bg-surface-container-low"><div class="flex items-center justify-between text-xs text-on-surface-variant"><span class="flex items-center gap-1 font-semibold text-tertiary"><span class="material-symbols-outlined text-[14px]">database</span> Supabase DB</span><span class="text-[11px] text-tertiary font-mono font-bold">Conectado</span></div></div><nav class="flex-1 px-space-sm py-space-md flex flex-col gap-space-2xs" data-active-classes="bg-secondary-fixed text-on-secondary-fixed font-semibold"><a class="flex items-center gap-space-sm px-space-md py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="painel-admin" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span>Painel Geral</a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-xs rounded transition-colors bg-secondary-fixed text-on-secondary-fixed font-semibold" data-path="catalogo-e-produtos" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span>Catálogo & Produtos</a><a class="flex items-center gap-space-sm px-space-md py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="categorias-admin" href="#"><span class="material-symbols-outlined text-[20px]">category</span>Categorias</a><a class="flex items-center gap-space-sm px-space-md py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="promocoes-e-ofertas" href="#"><span class="material-symbols-outlined text-[20px]">bolt</span>Promoções & Ofertas</a><a class="flex items-center gap-space-sm px-space-md py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="cupons-admin" href="#"><span class="material-symbols-outlined text-[20px]">local_offer</span>Cupons de Desconto</a><a class="flex items-center gap-space-sm px-space-md py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="vendas-e-pedidos" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span>Vendas & Pedidos</a><a class="flex items-center gap-space-sm px-space-md py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="clientes" href="#"><span class="material-symbols-outlined text-[20px]">group</span>Clientes</a></nav><div class="p-space-md bg-surface-container-lowest mt-auto"><a class="w-full flex items-center justify-center gap-space-xs py-space-xs bg-primary-container hover:bg-primary-fixed text-on-primary-fixed rounded font-label-md text-label-md transition-colors" data-path="vitrine" href="#"><span class="material-symbols-outlined text-[18px]">storefront</span>Voltar à Vitrine</a></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-sm text-on-surface"><span class="font-label-md text-label-md font-semibold text-secondary">Gestão CompFast</span><span class="text-outline-variant">/</span><span class="text-xs text-on-surface-variant font-mono">v2.4.0 (Supabase Realtime)</span></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-2xs rounded"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant">Sincronizado</span></div><button class="text-on-surface-variant hover:text-on-surface"><span class="material-symbols-outlined text-[22px]">notifications</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 w-full px-gutter-desktop bg-surface"><div class="flex flex-col w-full">
+<div class="py-space-md flex flex-col gap-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container flex items-center justify-center text-on-primary-fixed shadow-sm">
+<span class="material-symbols-outlined text-[28px]">inventory_2</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-headline-md font-semibold text-on-surface">Gestão de Catálogo & Categorias</span>
+<span class="font-badge text-badge px-space-xs py-space-2xs bg-tertiary-container text-on-tertiary-container rounded">PostgreSQL v15</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-space-xs">
+<span>Sincronizado via Supabase Storage & Database</span>
+<span>•</span>
+<span class="font-mono text-tertiary flex items-center gap-0.5"><span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> is_admin() = true</span>
+</p>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="px-space-md py-space-xs rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-space-xs transition-colors" id="btn-open-category-modal">
+<span class="material-symbols-outlined text-[18px]">bookmark_add</span>
+<span>+ Nova Categoria</span>
+</button>
+<button class="px-space-md py-space-xs rounded bg-secondary hover:bg-on-secondary-fixed-variant text-on-secondary font-label-md text-label-md flex items-center gap-space-xs shadow-sm transition-colors" id="btn-open-product-modal">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>+ Novo Produto</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[24px]">shopping_bag</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Produtos Ativos</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">1.248</span>
+<span class="font-badge text-badge text-tertiary font-bold">+12%</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Catálogo principal 98.4% ativo</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-error-container flex items-center justify-center text-on-error-container">
+<span class="material-symbols-outlined text-[24px]">warning</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Estoque Crítico</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg font-bold text-error">9</span>
+<span class="font-badge text-badge text-error font-bold">Atenção</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">≤ 3 unidades disponíveis</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-[24px]">category</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Categorias Ativas</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">18</span>
+<span class="font-badge text-badge text-on-surface-variant">4 vazias</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Árvore taxonômica completa</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-tertiary-container flex items-center justify-center text-on-tertiary-container">
+<span class="material-symbols-outlined text-[24px]">cloud_upload</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">fotos-produtos</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">3.820</span>
+<span class="font-badge text-badge text-tertiary font-bold">1.4 GB</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Bucket público Supabase CDN</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 xl:grid-cols-4 gap-space-lg items-start">
+<div class="xl:col-span-3 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="relative w-full md:w-80">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full pl-10 pr-4 py-2 bg-surface-container-low text-on-surface rounded font-body-sm text-body-sm outline-none focus:bg-surface-container-lowest focus:shadow-sm transition-all" id="filter-search" placeholder="Buscar por SKU, nome ou marca..." type="text"/>
+</div>
+<div class="flex items-center gap-space-sm w-full md:w-auto">
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1.5 rounded">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">filter_list</span>
+<select class="bg-transparent font-body-sm text-body-sm text-on-surface outline-none cursor-pointer" id="filter-category">
+<option value="all">Todas as Categorias</option>
+<option value="Processadores">Processadores</option>
+<option value="Placas de Vídeo">Placas de Vídeo</option>
+<option value="Placas-Mãe">Placas-Mãe</option>
+<option value="Memória RAM">Memória RAM</option>
+<option value="Armazenamento">Armazenamento (SSDs)</option>
+<option value="Periféricos">Periféricos</option>
+</select>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1.5 rounded">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">tune</span>
+<select class="bg-transparent font-body-sm text-body-sm text-on-surface outline-none cursor-pointer" id="filter-stock">
+<option value="all">Estoque: Todos</option>
+<option value="low">Apenas Crítico (≤ 5)</option>
+<option value="out">Esgotados (0)</option>
+<option value="highlighted">Destaques Home</option>
+</select>
+</div>
+<button class="p-2 text-on-surface-variant hover:text-on-surface bg-surface-container-low hover:bg-surface-container rounded transition-colors" title="Atualizar dados">
+<span class="material-symbols-outlined text-[18px]">refresh</span>
+</button>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase">
+<th class="py-space-sm px-space-md">Produto & Foto</th>
+<th class="py-space-sm px-space-md">Categoria</th>
+<th class="py-space-sm px-space-md">Preço Venda</th>
+<th class="py-space-sm px-space-md">Estoque</th>
+<th class="py-space-sm px-space-md text-center">Destaque</th>
+<th class="py-space-sm px-space-md text-center">Ativo</th>
+<th class="py-space-sm px-space-md text-right">Ações</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-body-md text-body-md text-on-surface">
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded bg-surface-container-high overflow-hidden shrink-0 flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="High performance PC graphics card with three cooling fans, RGB lights, metal backplate, studio clean product photography on white seamless background, crisp details" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLLOQpW3Fb9L8DHGshxs8b-Bz6cCXpJsxhsGOjhaAAermg8REB4aawRG9RZqX-ClenFAlAidjy0bMTXGuHQMyddwk1jE5qjCO8RJFzK_Vjq9YJvOjmSUgmWGxFzAUaEorlNhMX8X8nRXQ-ZF_IdOvhMyZKtVFtqXZuBQ8NSRNCAWXuUClgl9lWL7H2GgzedjqgsXGBeZYQqjbJm-12eT0L6pnaHtOJSgzIhpYMqYqrmw0aH3xJpEb3"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm font-semibold truncate text-on-surface">Placa de Vídeo RTX 4070 Ti 12GB Super OC</span>
+<span class="font-mono text-body-sm text-on-surface-variant">SKU: GPU-NV-4070TI-OC</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<span class="inline-flex items-center px-space-xs py-space-2xs bg-secondary-fixed text-on-secondary-fixed font-badge text-badge rounded uppercase">Placas de Vídeo</span>
+</td>
+<td class="py-space-sm px-space-md">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">R$ 5.499,00</span>
+<span class="block text-[11px] text-tertiary font-medium">À vista R$ 4.949,10</span>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="font-bold text-on-surface">14 un.</span>
+</div>
+<span class="text-[11px] text-on-surface-variant">Normal</span>
+</td>
+<td class="py-space-sm px-space-md text-center">
+<button class="w-9 h-5 bg-secondary rounded-full relative transition-colors focus:outline-none cursor-pointer" onclick="this.classList.toggle('bg-secondary'); this.classList.toggle('bg-surface-container-highest'); this.children[0].classList.toggle('translate-x-4');">
+<div class="w-3.5 h-3.5 bg-surface-container-lowest rounded-full absolute top-0.5 left-0.5 transform translate-x-4 transition-transform"></div>
+</button>
+</td>
+<td class="py-space-sm px-space-md text-center">
+<span class="px-space-xs py-space-2xs bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm rounded font-medium">Ativo</span>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<div class="flex items-center justify-end gap-space-2xs">
+<button class="p-1.5 hover:bg-surface-container text-on-surface-variant hover:text-secondary rounded transition-colors" title="Editar Produto">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+<button class="p-1.5 hover:bg-surface-container text-on-surface-variant hover:text-primary rounded transition-colors" title="Criar Oferta Relâmpago">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+</button>
+<button class="p-1.5 hover:bg-surface-container text-on-surface-variant hover:text-error rounded transition-colors" title="Excluir">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded bg-surface-container-high overflow-hidden shrink-0 flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="AMD Ryzen desktop processor box and exposed microchip processor with gold pins and metallic heat spreader, crisp clean e-commerce studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMTYqAJKj7eVF8Ablzh7lMuL7ZXudKJZZvXv3ujwVd7qJnkikxf04LY6rq9HF1WThjqpnne-qqZ6-3QOEIgTFIvPYx5j5aoEZqWkaoR0zqTXhPmbfFBgxRZcz5oSPFUc7QHxv9QAQEXqben--oFDOXnf50_TfrO0XLZ7QR0hCTMg3m-gMPTzvjkoTp_MgWrWrn8mCmDkzdAkIB2CDFqdzvKV3Dn7P21GCovEcleVGWMI-bmDLSXFQ6"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm font-semibold truncate text-on-surface">Processador AMD Ryzen 7 7800X3D 4.2GHz</span>
+<span class="font-mono text-body-sm text-on-surface-variant">SKU: CPU-AMD-7800X3D</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<span class="inline-flex items-center px-space-xs py-space-2xs bg-secondary-fixed text-on-secondary-fixed font-badge text-badge rounded uppercase">Processadores</span>
+</td>
+<td class="py-space-sm px-space-md">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">R$ 2.899,90</span>
+<span class="block text-[11px] text-tertiary font-medium">À vista R$ 2.609,91</span>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-error animate-ping"></span>
+<span class="font-bold text-error">2 un.</span>
+</div>
+<span class="text-[11px] text-error font-medium">Estoque Crítico</span>
+</td>
+<td class="py-space-sm px-space-md text-center">
+<button class="w-9 h-5 bg-secondary rounded-full relative transition-colors focus:outline-none cursor-pointer" onclick="this.classList.toggle('bg-secondary'); this.classList.toggle('bg-surface-container-highest'); this.children[0].classList.toggle('translate-x-4');">
+<div class="w-3.5 h-3.5 bg-surface-container-lowest rounded-full absolute top-0.5 left-0.5 transform translate-x-4 transition-transform"></div>
+</button>
+</td>
+<td class="py-space-sm px-space-md text-center">
+<span class="px-space-xs py-space-2xs bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm rounded font-medium">Ativo</span>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<div class="flex items-center justify-end gap-space-2xs">
+<button class="p-1.5 hover:bg-surface-container text-on-surface-variant hover:text-secondary rounded transition-colors" title="Editar Produto">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+<button class="p-1.5 hover:bg-surface-container text-on-surface-variant hover:text-primary rounded transition-colors" title="Criar Oferta Relâmpago">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+</button>
+<button class="p-1.5 hover:bg-surface-container text-on-surface-variant hover:text-error rounded transition-colors" title="Excluir">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded bg-surface-container-high overflow-hidden shrink-0 flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="High-speed NVMe M.2 solid state drive SSD with black sleek heatsink, electronic contacts, studio white tabletop lighting, sharp tech hardware aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9SxCEXqtH60o6AFsw8prFvm31NKRcIa7p915YUY1BDYw9NofUZB065Ds5KAmtXAsvE7nCpyXlvEDz9luRXAW6bEDvbOU5hAPr_9EQ8JMtlhi1il7_evjsCLqv6nhd3enPEkZSxyiziZe553NlaXLNTUaGzR5dChbWd6LQWabyWhhJs-KDBH7XPQM6n8SLuSiJ-524snXOLq4kFY5HZgmYJ8AWt-f9I7CN3Jh-iuraffeJtW-G83vy"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm font-semibold truncate text-on-surface">SSD Kingston Fury Renegade 2TB M.2 NVMe</span>
+<span class="font-mono text-body-sm text-on-surface-variant">SKU: SSD-KG-FURY-2TB</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<span class="inline-flex items-center px-space-xs py-space-2xs bg-secondary-fixed text-on-secondary-fixed font-badge text-badge rounded uppercase">Armazenamento</span>
+</td>
+<td class="py-space-sm px-space-md">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">R$ 1.149,00</span>
+<span class="block text-[11px] text-tertiary font-medium">À vista R$ 1.034,10</span>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-fixed-dim"></span>
+<span class="font-bold text-on-surface">6 un.</span>
+</div>
+<span class="text-[11px] text-on-surface-variant">Moderado</span>
+</td>
+<td class="py-space-sm px-space-md text-center">
+<button class="w-9 h-5 bg-surface-container-highest rounded-full relative transition-colors focus:outline-none cursor-pointer" onclick="this.classList.toggle('bg-secondary'); this.classList.toggle('bg-surface-container-highest'); this.children[0].classList.toggle('translate-x-4');">
+<div class="w-3.5 h-3.5 bg-surface-container-lowest rounded-full absolute top-0.5 left-0.5 transition-transform"></div>
+</button>
+</td>
+<td class="py-space-sm px-space-md text-center">
+<span class="px-space-xs py-space-2xs bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm rounded font-medium">Ativo</span>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<div class="flex items-center justify-end gap-space-2xs">
+<button class="p-1.5 hover:bg-surface-container text-on-surface-variant hover:text-secondary rounded transition-colors" title="Editar Produto">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+<button class="p-1.5 hover:bg-surface-container text-on-surface-variant hover:text-primary rounded transition-colors" title="Criar Oferta Relâmpago">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+</button>
+<button class="p-1.5 hover:bg-surface-container text-on-surface-variant hover:text-error rounded transition-colors" title="Excluir">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-lowest/50 opacity-80">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded bg-surface-container-high overflow-hidden shrink-0 flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Mechanical gaming keyboard with RGB illuminated mechanical switches and volume dial, angled product view on white surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrU-4X6AswT1xhiGpe3jxVcCvtkgZYq74yExGUa8iq4CQ-sdLAQ4Jg3iIc13jSJsgCuYfA8Cyi2jWBgG-QAzmDkn9u7q7F2u5cAc1m7OLxiYLvHmbPiNBHTI-vIxsLK1LBlMiL0GkN7x7Lb0CiQNZ7WklHzgQ48h54ysRAcWIZqhdjohb6XLwd2pTQ8eyzJQ913ov8l123m9ISHAbQAGwAJnPNVq1SimRjU52t-bo9qhaWMKTxqbwo"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm font-semibold truncate text-on-surface">Teclado Mecânico Pro RGB Switch Red</span>
+<span class="font-mono text-body-sm text-on-surface-variant">SKU: PER-TEC-RGB-SW01</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<span class="inline-flex items-center px-space-xs py-space-2xs bg-secondary-fixed text-on-secondary-fixed font-badge text-badge rounded uppercase">Periféricos</span>
+</td>
+<td class="py-space-sm px-space-md">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">R$ 389,00</span>
+<span class="block text-[11px] text-tertiary font-medium">À vista R$ 350,10</span>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span class="font-bold text-error">0 un.</span>
+</div>
+<span class="text-[11px] text-error font-medium">Esgotado</span>
+</td>
+<td class="py-space-sm px-space-md text-center">
+<button class="w-9 h-5 bg-surface-container-highest rounded-full relative transition-colors focus:outline-none cursor-pointer" onclick="this.classList.toggle('bg-secondary'); this.classList.toggle('bg-surface-container-highest'); this.children[0].classList.toggle('translate-x-4');">
+<div class="w-3.5 h-3.5 bg-surface-container-lowest rounded-full absolute top-0.5 left-0.5 transition-transform"></div>
+</button>
+</td>
+<td class="py-space-sm px-space-md text-center">
+<span class="px-space-xs py-space-2xs bg-error-container text-on-error-container font-label-sm text-label-sm rounded font-medium">Inativo</span>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<div class="flex items-center justify-end gap-space-2xs">
+<button class="p-1.5 hover:bg-surface-container text-on-surface-variant hover:text-secondary rounded transition-colors" title="Editar Produto">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+<button class="p-1.5 hover:bg-surface-container text-on-surface-variant hover:text-primary rounded transition-colors" title="Criar Oferta Relâmpago">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+</button>
+<button class="p-1.5 hover:bg-surface-container text-on-surface-variant hover:text-error rounded transition-colors" title="Excluir">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="p-space-md bg-surface-container-lowest flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Exibindo <strong>1-4</strong> de <strong>1.248</strong> itens cadastrados</span>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1 bg-surface-container-low hover:bg-surface-container text-on-surface-variant rounded font-label-sm text-label-sm disabled:opacity-50" disabled="">Anterior</button>
+<button class="w-7 h-7 flex items-center justify-center rounded bg-secondary text-on-secondary font-label-sm text-label-sm">1</button>
+<button class="w-7 h-7 flex items-center justify-center rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm">2</button>
+<button class="w-7 h-7 flex items-center justify-center rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm">3</button>
+<span class="text-on-surface-variant font-label-sm">...</span>
+<button class="w-7 h-7 flex items-center justify-center rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm">42</button>
+<button class="px-space-sm py-1 bg-surface-container hover:bg-surface-container-high text-on-surface rounded font-label-sm text-label-sm">Próximo</button>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">folder_special</span>
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">Categorias</span>
+</div>
+<span class="font-badge text-badge px-space-xs py-space-2xs bg-secondary-fixed text-on-secondary-fixed rounded">Total: 18</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Cadastro Rápido</label>
+<div class="flex gap-space-xs">
+<input class="flex-1 px-3 py-1.5 bg-surface-container-low rounded font-body-sm text-body-sm text-on-surface outline-none focus:bg-surface-container-lowest shadow-inner" id="quick-category-name" placeholder="Nome (ex: Gabinetes)..." type="text"/>
+<button class="px-space-sm py-1.5 bg-secondary hover:bg-on-secondary-fixed-variant text-on-secondary rounded font-label-sm text-label-sm flex items-center justify-center transition-colors" id="btn-save-quick-category">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-space-2xs max-h-96 overflow-y-auto pr-1">
+<div class="flex items-center justify-between p-space-xs bg-surface-container-low rounded hover:bg-surface-container transition-colors">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Placas de Vídeo</span>
+<span class="text-[11px] text-on-surface-variant">Slug: placas-de-video</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-mono text-body-sm font-bold text-on-surface">142 prods</span>
+<button class="text-on-surface-variant hover:text-error transition-colors p-1" title="Excluir categoria">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-between p-space-xs bg-surface-container-low rounded hover:bg-surface-container transition-colors">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Processadores</span>
+<span class="text-[11px] text-on-surface-variant">Slug: processadores</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-mono text-body-sm font-bold text-on-surface">96 prods</span>
+<button class="text-on-surface-variant hover:text-error transition-colors p-1" title="Excluir categoria">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-between p-space-xs bg-surface-container-low rounded hover:bg-surface-container transition-colors">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Armazenamento</span>
+<span class="text-[11px] text-on-surface-variant">Slug: armazenamento</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-mono text-body-sm font-bold text-on-surface">210 prods</span>
+<button class="text-on-surface-variant hover:text-error transition-colors p-1" title="Excluir categoria">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-between p-space-xs bg-surface-container-low rounded hover:bg-surface-container transition-colors">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Memória RAM</span>
+<span class="text-[11px] text-on-surface-variant">Slug: memoria-ram</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-mono text-body-sm font-bold text-on-surface">88 prods</span>
+<button class="text-on-surface-variant hover:text-error transition-colors p-1" title="Excluir categoria">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-between p-space-xs bg-surface-container-low rounded hover:bg-surface-container transition-colors">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Periféricos</span>
+<span class="text-[11px] text-on-surface-variant">Slug: perifericos</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-mono text-body-sm font-bold text-on-surface">315 prods</span>
+<button class="text-on-surface-variant hover:text-error transition-colors p-1" title="Excluir categoria">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Total indexado no banco</span>
+<span class="font-mono text-label-sm font-bold text-on-surface">1.248 SKUs</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface font-semibold">
+<span class="material-symbols-outlined text-[20px] text-secondary">cloud_done</span>
+<span class="font-label-md text-label-md">Status Bucket Supabase</span>
+</div>
+<div class="space-y-1">
+<div class="flex justify-between font-body-sm text-[11px]">
+<span class="text-on-surface-variant">fotos-produtos (Público)</span>
+<span class="font-mono text-on-surface">1.4 GB / 5.0 GB</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 28%"></div>
+</div>
+</div>
+<p class="font-body-sm text-[11px] text-on-surface-variant">Políticas RLS aplicadas: leitura pública liberada, insert restrito ao role `authenticated` com verificação `is_admin() = true`.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden items-center justify-center p-4" id="product-modal">
+<div class="bg-surface-container-lowest rounded-xl max-w-2xl w-full max-h-[92vh] flex flex-col shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+<div class="px-space-lg py-space-md bg-surface-container-lowest border-b border-surface-container flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">add_box</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Cadastrar Novo Produto</span>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface p-1 rounded hover:bg-surface-container transition-colors" id="btn-close-product-modal">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-space-lg flex-1 overflow-y-auto space-y-space-md">
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Nome Completo do Produto *</label>
+<input class="w-full px-3 py-2 bg-surface-container-low text-on-surface rounded font-body-md text-body-md outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/40 transition-all" placeholder="Ex: Placa de Vídeo ASUS ROG Strix GeForce RTX 4080 16GB" type="text"/>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Categoria *</label>
+<select class="w-full px-3 py-2 bg-surface-container-low text-on-surface rounded font-body-md text-body-md outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/40 transition-all cursor-pointer">
+<option value="">Selecione uma categoria...</option>
+<option value="1">Processadores</option>
+<option value="2">Placas de Vídeo</option>
+<option value="3">Armazenamento</option>
+<option value="4">Memória RAM</option>
+<option value="5">Periféricos</option>
+</select>
+</div>
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Código SKU / Referência</label>
+<input class="w-full px-3 py-2 bg-surface-container-low text-on-surface rounded font-body-md text-body-md outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/40 transition-all" placeholder="Ex: GPU-ASUS-4080-16G" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Preço de Venda (R$) *</label>
+<div class="relative">
+<span class="absolute left-3 top-2 font-label-md text-on-surface-variant">R$</span>
+<input class="w-full pl-10 pr-3 py-2 bg-surface-container-low text-on-surface rounded font-body-md text-body-md outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/40 transition-all font-semibold" placeholder="4.999,00" step="0.01" type="number"/>
+</div>
+</div>
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Estoque Inicial (Unidades) *</label>
+<input class="w-full px-3 py-2 bg-surface-container-low text-on-surface rounded font-body-md text-body-md outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/40 transition-all" placeholder="Ex: 10" type="number"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Foto Principal (Upload no Bucket 'fotos-produtos')</label>
+<div class="border-2 border-dashed border-outline-variant rounded-xl p-space-md text-center bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer flex flex-col items-center justify-center gap-space-xs" onclick="document.getElementById('product-file-input').click()">
+<input accept="image/png, image/jpeg, image/webp" class="hidden" id="product-file-input" type="file"/>
+<div class="w-12 h-12 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">add_photo_alternate</span>
+</div>
+<p class="font-body-md text-body-md font-medium text-on-surface">Arraste a foto do produto ou <span class="text-secondary underline">procure no computador</span></p>
+<p class="font-body-sm text-[11px] text-on-surface-variant">Formatos suportados: PNG, JPEG ou WEBP (Máx: 5MB). O Supabase Storage gerará a URL pública automaticamente.</p>
+</div>
+<div class="p-space-xs bg-tertiary-container/30 text-on-tertiary-container rounded flex items-center gap-space-xs font-body-sm text-body-sm" id="upload-status">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>URL de destino: https://[supabase-project].supabase.co/storage/v1/object/public/fotos-produtos/</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-lg pt-space-xs">
+<label class="flex items-center gap-space-xs cursor-pointer select-none">
+<input checked="" class="w-4 h-4 text-secondary rounded focus:ring-secondary cursor-pointer" type="checkbox"/>
+<span class="font-label-md text-label-md text-on-surface font-medium">Produto Ativo (Visível na loja)</span>
+</label>
+<label class="flex items-center gap-space-xs cursor-pointer select-none">
+<input class="w-4 h-4 text-secondary rounded focus:ring-secondary cursor-pointer" type="checkbox"/>
+<span class="font-label-md text-label-md text-on-surface font-medium">Destacar na Página Inicial</span>
+</label>
+</div>
+</div>
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-end gap-space-sm">
+<button class="px-space-md py-space-xs rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" id="btn-cancel-product-modal">
+          Cancelar
+        </button>
+<button class="px-space-lg py-space-xs rounded bg-secondary hover:bg-on-secondary-fixed-variant text-on-secondary font-label-md text-label-md flex items-center gap-space-xs shadow-sm transition-colors" id="btn-save-product-modal">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Salvar Produto</span>
+</button>
+</div>
+</div>
+</div>
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden items-center justify-center p-4" id="category-modal">
+<div class="bg-surface-container-lowest rounded-xl max-w-md w-full shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-200 flex flex-col">
+<div class="px-space-lg py-space-md border-b border-surface-container flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">category</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Nova Categoria</span>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface p-1 rounded hover:bg-surface-container transition-colors" id="btn-close-category-modal">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-space-lg space-y-space-md">
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Nome da Categoria *</label>
+<input class="w-full px-3 py-2 bg-surface-container-low text-on-surface rounded font-body-md text-body-md outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/40 transition-all" id="cat-name-input" placeholder="Ex: Monitores Gamers" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Slug (identificador amigável na URL)</label>
+<input class="w-full px-3 py-2 bg-surface-container-low text-on-surface rounded font-body-md text-body-md outline-none focus:bg-surface-container-lowest font-mono text-body-sm" placeholder="monitores-gamers" type="text"/>
+</div>
+<label class="flex items-center gap-space-xs cursor-pointer select-none">
+<input checked="" class="w-4 h-4 text-secondary rounded focus:ring-secondary cursor-pointer" type="checkbox"/>
+<span class="font-label-md text-label-md text-on-surface font-medium">Categoria Ativa no Menu</span>
+</label>
+</div>
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-end gap-space-sm">
+<button class="px-space-md py-space-xs rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" id="btn-cancel-cat-modal">Cancelar</button>
+<button class="px-space-md py-space-xs rounded bg-secondary hover:bg-on-secondary-fixed-variant text-on-secondary font-label-md text-label-md transition-colors" id="btn-confirm-cat-modal">Salvar Categoria</button>
+</div>
+</div>
+</div>
+<script>
+    (function() {
+      const prodModal = document.getElementById('product-modal');
+      const btnOpenProd = document.getElementById('btn-open-product-modal');
+      const btnCloseProd = document.getElementById('btn-close-product-modal');
+      const btnCancelProd = document.getElementById('btn-cancel-product-modal');
+      const btnSaveProd = document.getElementById('btn-save-product-modal');
+
+      function toggleProdModal(open) {
+        if (open) {
+          prodModal.classList.remove('hidden');
+          prodModal.classList.add('flex');
+        } else {
+          prodModal.classList.add('hidden');
+          prodModal.classList.remove('flex');
+        }
+      }
+
+      btnOpenProd?.addEventListener('click', () => toggleProdModal(true));
+      btnCloseProd?.addEventListener('click', () => toggleProdModal(false));
+      btnCancelProd?.addEventListener('click', () => toggleProdModal(false));
+      btnSaveProd?.addEventListener('click', () => {
+        alert('Produto cadastrado com sucesso no banco Supabase!');
+        toggleProdModal(false);
+      });
+
+      const catModal = document.getElementById('category-modal');
+      const btnOpenCat = document.getElementById('btn-open-category-modal');
+      const btnCloseCat = document.getElementById('btn-close-category-modal');
+      const btnCancelCat = document.getElementById('btn-cancel-cat-modal');
+      const btnConfirmCat = document.getElementById('btn-confirm-cat-modal');
+
+      function toggleCatModal(open) {
+        if (open) {
+          catModal.classList.remove('hidden');
+          catModal.classList.add('flex');
+        } else {
+          catModal.classList.add('hidden');
+          catModal.classList.remove('flex');
+        }
+      }
+
+      btnOpenCat?.addEventListener('click', () => toggleCatModal(true));
+      btnCloseCat?.addEventListener('click', () => toggleCatModal(false));
+      btnCancelCat?.addEventListener('click', () => toggleCatModal(false));
+      btnConfirmCat?.addEventListener('click', () => {
+        alert('Categoria cadastrada com sucesso!');
+        toggleCatModal(false);
+      });
+
+      const btnQuickCat = document.getElementById('btn-save-quick-category');
+      const inputQuickCat = document.getElementById('quick-category-name');
+      btnQuickCat?.addEventListener('click', () => {
+        if (!inputQuickCat.value.trim()) {
+          alert('Por favor, informe o nome da categoria.');
+          return;
+        }
+        alert('Categoria "' + inputQuickCat.value + '" salva com sucesso!');
+        inputQuickCat.value = '';
+      });
+    })();
+  </script>
+</div></main></div></body></html>
