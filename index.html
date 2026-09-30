@@ -1,13 +1,153 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CompFast - E-commerce de Eletrônicos</title>
-  </head>
-  <body class="bg-slate-950 text-slate-100 min-h-screen">
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CompFast - E-commerce de Eletrônicos</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Supabase JS Client via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🛍️</div>
+        <div class="logo-text">
+          <span class="brand-name">CompFast</span>
+          <span class="brand-sub">E-COMMERCE DE ELETRÔNICOS</span>
+        </div>
+      </a>
+
+      <div class="search-bar">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-input" placeholder="Buscar produtos, marcas, ofertas...">
+      </div>
+
+      <div class="nav-actions">
+        <a href="admin.html" class="btn btn-secondary">
+          <span>👤</span> Painel da Loja
+        </a>
+        <button id="cart-btn" class="btn btn-primary cart-btn">
+          <span>🛒</span>
+          <span id="cart-count-badge" class="badge">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container main-content">
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+      <div class="hero-content">
+        <span class="badge badge-promo">🏷️ Promoções Especiais Ativas</span>
+        <h1>Tecnologia de Ponta com os Melhores Preços</h1>
+        <p>Aproveite nossos cupons e descontos exclusivos nas categorias de Informática, Celulares, Games e Áudio.</p>
+      </div>
+    </section>
+
+    <!-- Category Filter Tabs -->
+    <section class="categories-section">
+      <div id="categories-tabs" class="categories-tabs">
+        <button class="cat-tab active" data-id="all">Todas as Categorias</button>
+        <!-- Categorias dinâmicas serão renderizadas aqui -->
+      </div>
+    </section>
+
+    <!-- Product Grid Section -->
+    <section class="products-section">
+      <div class="section-header">
+        <h2 id="section-title">📦 Produtos Disponíveis</h2>
+      </div>
+
+      <div id="products-grid" class="products-grid">
+        <div class="loading-spinner">Carregando produtos...</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Cart Slide-over Drawer -->
+  <div id="cart-drawer" class="drawer">
+    <div class="drawer-overlay" id="cart-overlay"></div>
+    <div class="drawer-content">
+      <div class="drawer-header">
+        <h2>🛒 Seul Carrinho (<span id="cart-items-count">0</span>)</h2>
+        <button id="close-cart-btn" class="btn-icon">&times;</button>
+      </div>
+
+      <div id="cart-items-list" class="cart-items-list">
+        <!-- Itens do carrinho -->
+      </div>
+
+      <div class="drawer-footer">
+        <div class="coupon-box">
+          <input type="text" id="coupon-input" placeholder="Cupom de desconto">
+          <button id="apply-coupon-btn" class="btn btn-secondary">Aplicar</button>
+        </div>
+        <div id="coupon-message" class="coupon-msg"></div>
+
+        <div class="summary-details">
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <span id="cart-subtotal">R$ 0,00</span>
+          </div>
+          <div id="discount-row" class="summary-row discount-row hidden">
+            <span>Desconto (<span id="discount-label"></span>)</span>
+            <span id="cart-discount">-R$ 0,00</span>
+          </div>
+          <div class="summary-row total-row">
+            <span>Total</span>
+            <span id="cart-total">R$ 0,00</span>
+          </div>
+        </div>
+
+        <button id="checkout-btn" class="btn btn-primary btn-block">Finalizar Compra</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Checkout Modal -->
+  <div id="checkout-modal" class="modal">
+    <div class="modal-overlay" id="checkout-overlay"></div>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Finalizar Compra</h2>
+        <button id="close-checkout-btn" class="btn-icon">&times;</button>
+      </div>
+      <form id="checkout-form">
+        <div class="form-group">
+          <label for="c-nome">Nome Completo *</label>
+          <input type="text" id="c-nome" required placeholder="Seu nome completo">
+        </div>
+        <div class="form-group">
+          <label for="c-email">E-mail *</label>
+          <input type="email" id="c-email" required placeholder="seu@email.com">
+        </div>
+        <div class="form-group">
+          <label for="c-telefone">Telefone / WhatsApp</label>
+          <input type="tel" id="c-telefone" placeholder="(00) 00000-0000">
+        </div>
+        <div class="form-group">
+          <label for="c-cpf">CPF / CNPJ</label>
+          <input type="text" id="c-cpf" placeholder="000.000.000-00">
+        </div>
+        <div class="form-group">
+          <label for="c-endereco">Endereço de Entrega</label>
+          <input type="text" id="c-endereco" placeholder="Rua, Número, Bairro, Cidade - UF">
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" id="cancel-checkout-btn" class="btn btn-secondary">Cancelar</button>
+          <button type="submit" id="confirm-checkout-btn" class="btn btn-primary">Confirmar Pedido</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- App Scripts -->
+  <script src="js/supabase.js"></script>
+  <script src="js/app.js"></script>
+</body>
 </html>

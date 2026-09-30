@@ -1,7 +1,0 @@
-
-> compfast-ecommerce@1.0.0 preview
-> vite preview --port 3000
-
-Port 3000 is in use, trying another one...
-  ➜  Local:   http://localhost:3001/
-  ➜  Network: use --host to expose
