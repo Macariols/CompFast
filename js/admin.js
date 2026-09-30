@@ -229,11 +229,13 @@ function renderTabelaCupons() {
 
   tbody.innerHTML = '';
   adminState.cupons.forEach(c => {
+    const tipo = c.tipo_desconto || c.tipo || 'porcentagem';
+    const isPct = tipo === 'porcentagem' || tipo === 'percent';
     const tr = document.createElement('tr');
     tr.innerHTML = `
       <td><strong style="color: var(--accent-blue);">${c.codigo}</strong></td>
-      <td>${c.tipo === 'porcentagem' ? 'Porcentagem (%)' : 'Valor Fixo (R$)'}</td>
-      <td><strong>${c.tipo === 'porcentagem' ? `${c.valor}%` : formatCurrency(c.valor)}</strong></td>
+      <td>${isPct ? 'Porcentagem (%)' : 'Valor Fixo (R$)'}</td>
+      <td><strong>${isPct ? `${c.valor}%` : formatCurrency(c.valor)}</strong></td>
       <td>${c.valor_minimo ? formatCurrency(c.valor_minimo) : 'R$ 0,00'}</td>
       <td><span class="badge ${c.ativo ? 'badge-success' : 'badge-danger'}">${c.ativo ? 'Ativo' : 'Inativo'}</span></td>
       <td class="actions-cell">
@@ -257,7 +259,7 @@ function abrirModalCupom(cupom = null) {
     title.textContent = 'Editar Cupom';
     document.getElementById('cup-id').value = cupom.id;
     document.getElementById('cup-codigo').value = cupom.codigo;
-    document.getElementById('cup-tipo').value = cupom.tipo;
+    document.getElementById('cup-tipo').value = cupom.tipo_desconto || cupom.tipo || 'porcentagem';
     document.getElementById('cup-valor').value = cupom.valor;
     document.getElementById('cup-minimo').value = cupom.valor_minimo || 0;
     document.getElementById('cup-ativo').value = String(cupom.ativo);
@@ -305,14 +307,16 @@ function renderTabelaPromocoes() {
       alvoText = cat ? `Categoria: ${cat.nome}` : `Categoria #${p.categoria_id}`;
     }
 
-    const expirada = new Date(p.data_expiracao) < new Date();
+    const expDate = p.expira_em || p.data_expiracao;
+    const expirada = expDate ? new Date(expDate) < new Date() : false;
+    const descPct = p.desconto_pct ?? p.desconto_porcentagem ?? 0;
 
     const tr = document.createElement('tr');
     tr.innerHTML = `
       <td><strong>${p.nome}</strong></td>
       <td>${alvoText}</td>
-      <td><span class="badge badge-promo">-${p.desconto_porcentagem}%</span></td>
-      <td>${new Date(p.data_expiracao).toLocaleDateString('pt-BR')}</td>
+      <td><span class="badge badge-promo">-${descPct}%</span></td>
+      <td>${expDate ? new Date(expDate).toLocaleDateString('pt-BR') : '-'}</td>
       <td><span class="badge ${expirada ? 'badge-danger' : 'badge-success'}">${expirada ? 'Expirada' : 'Ativa'}</span></td>
       <td class="actions-cell">
         <button class="btn btn-secondary btn-sm edit-btn">✏️ Editar</button>
@@ -345,11 +349,12 @@ function abrirModalPromocao(promocao = null) {
   });
 
   if (promocao) {
+    const expDate = promocao.expira_em || promocao.data_expiracao;
     title.textContent = 'Editar Promoção';
     document.getElementById('promo-id').value = promocao.id;
     document.getElementById('promo-nome').value = promocao.nome;
-    document.getElementById('promo-desconto').value = promocao.desconto_porcentagem;
-    document.getElementById('promo-expiracao').value = promocao.data_expiracao ? promocao.data_expiracao.split('T')[0] : '';
+    document.getElementById('promo-desconto').value = promocao.desconto_pct ?? promocao.desconto_porcentagem ?? 0;
+    document.getElementById('promo-expiracao').value = expDate ? expDate.split('T')[0] : '';
     document.getElementById('promo-produto').value = promocao.produto_id || '';
     document.getElementById('promo-categoria').value = promocao.categoria_id || '';
   } else {
@@ -527,7 +532,7 @@ function setupFormEvents() {
     const valor_minimo = parseFloat(document.getElementById('cup-minimo').value) || 0;
     const ativo = document.getElementById('cup-ativo').value === 'true';
 
-    const payload = { codigo, tipo, valor, valor_minimo, ativo };
+    const payload = { codigo, tipo_desconto: tipo, valor, valor_minimo, ativo };
 
     if (id) {
       await supabaseClient.from('cupons').update(payload).eq('id', id);
@@ -544,12 +549,12 @@ function setupFormEvents() {
     e.preventDefault();
     const id = document.getElementById('promo-id').value;
     const nome = document.getElementById('promo-nome').value;
-    const desconto_porcentagem = parseFloat(document.getElementById('promo-desconto').value);
-    const data_expiracao = new Date(document.getElementById('promo-expiracao').value).toISOString();
+    const desconto_pct = parseFloat(document.getElementById('promo-desconto').value);
+    const expira_em = new Date(document.getElementById('promo-expiracao').value).toISOString();
     const produto_id = document.getElementById('promo-produto').value || null;
     const categoria_id = document.getElementById('promo-categoria').value || null;
 
-    const payload = { nome, desconto_porcentagem, data_expiracao, produto_id, categoria_id };
+    const payload = { nome, desconto_pct, expira_em, produto_id, categoria_id };
 
     if (id) {
       await supabaseClient.from('promocoes').update(payload).eq('id', id);

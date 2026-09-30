@@ -55,6 +55,38 @@ function setupEventListeners() {
   if (cancelCheckoutBtn) cancelCheckoutBtn.addEventListener('click', fecharModalCheckout);
   if (checkoutOverlay) checkoutOverlay.addEventListener('click', fecharModalCheckout);
   if (checkoutForm) checkoutForm.addEventListener('submit', finalizarPedido);
+
+  // Máscaras de Telefone e CPF
+  const phoneInput = document.getElementById('c-telefone');
+  if (phoneInput) {
+    phoneInput.addEventListener('input', (e) => {
+      e.target.value = maskPhone(e.target.value);
+    });
+  }
+
+  const cpfInput = document.getElementById('c-cpf');
+  if (cpfInput) {
+    cpfInput.addEventListener('input', (e) => {
+      e.target.value = maskCpf(e.target.value);
+    });
+  }
+}
+
+function maskPhone(value) {
+  let digits = value.replace(/\D/g, '').slice(0, 11);
+  if (!digits) return '';
+  if (digits.length <= 2) return `(${digits}`;
+  if (digits.length <= 7) return `(${digits.slice(0, 2)}) ${digits.slice(2)}`;
+  return `(${digits.slice(0, 2)}) ${digits.slice(2, 7)}-${digits.slice(7)}`;
+}
+
+function maskCpf(value) {
+  let digits = value.replace(/\D/g, '').slice(0, 11);
+  if (!digits) return '';
+  if (digits.length <= 3) return digits;
+  if (digits.length <= 6) return `${digits.slice(0, 3)}.${digits.slice(3)}`;
+  if (digits.length <= 9) return `${digits.slice(0, 3)}.${digits.slice(3, 6)}.${digits.slice(6)}`;
+  return `${digits.slice(0, 3)}.${digits.slice(3, 6)}.${digits.slice(6, 9)}-${digits.slice(9)}`;
 }
 
 async function carregarDados() {
@@ -107,15 +139,19 @@ function renderCategorias() {
 
 function calcularDescontoProduto(produto) {
   const agora = new Date();
-  const promosValidas = state.promocoes.filter(p => new Date(p.data_expiracao) > agora);
+  const promosValidas = state.promocoes.filter(p => {
+    const expDate = p.expira_em || p.data_expiracao;
+    return p.ativo !== false && expDate && new Date(expDate) > agora;
+  });
 
   let maiorDesconto = 0;
 
   promosValidas.forEach(p => {
+    const pct = p.desconto_pct ?? p.desconto_porcentagem ?? 0;
     if (p.produto_id && p.produto_id === produto.id) {
-      if (p.desconto_porcentagem > maiorDesconto) maiorDesconto = p.desconto_porcentagem;
+      if (pct > maiorDesconto) maiorDesconto = pct;
     } else if (p.categoria_id && p.categoria_id === produto.categoria_id) {
-      if (p.desconto_porcentagem > maiorDesconto) maiorDesconto = p.desconto_porcentagem;
+      if (pct > maiorDesconto) maiorDesconto = pct;
     }
   });
 
@@ -279,7 +315,8 @@ function renderResumoCarrinho() {
 
   let valorDesconto = 0;
   if (state.cupomAplicado) {
-    if (state.cupomAplicado.tipo === 'porcentagem') {
+    const tipo = state.cupomAplicado.tipo_desconto || state.cupomAplicado.tipo;
+    if (tipo === 'porcentagem' || tipo === 'percent') {
       valorDesconto = subtotal * (state.cupomAplicado.valor / 100);
     } else {
       valorDesconto = state.cupomAplicado.valor;
@@ -419,17 +456,18 @@ async function finalizarPedido(e) {
     const total = Math.max(0, subtotal - valorDesconto);
 
     // 3. Criar venda
+    const vendaPayload = {
+      cliente_id: clienteId,
+      subtotal,
+      desconto: valorDesconto,
+      total,
+      cupom_id: state.cupomAplicado ? state.cupomAplicado.id : null,
+      status: 'Pendente'
+    };
+
     const { data: venda, error: errVenda } = await supabaseClient
       .from('vendas')
-      .insert([{
-        cliente_id: clienteId,
-        data_venda: new Date().toISOString(),
-        subtotal,
-        desconto: valorDesconto,
-        total,
-        cupom_codigo: state.cupomAplicado ? state.cupomAplicado.codigo : null,
-        status: 'Pendente'
-      }])
+      .insert([vendaPayload])
       .select('id')
       .single();
 
@@ -442,8 +480,7 @@ async function finalizarPedido(e) {
         venda_id: venda.id,
         produto_id: item.id,
         quantidade: item.quantidade,
-        preco_unitario: calc.precoFinal,
-        subtotal: calc.precoFinal * item.quantidade
+        preco_unitario: calc.precoFinal
       }]);
 
       if (item.estoque !== undefined) {
